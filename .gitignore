@@ -1,0 +1,20 @@
+# general
+.DS_Store
+.vscode
+
+# stufs
+composer.phar
+
+# node_modules
+!node_modules/
+node_modules/*
+
+# 2 fancybox...
+!node_modules/fancybox/
+!node_modules/@fancyapps/
+
+# admin
+inc/admin/node_modules/
+
+# themes
+themes/**/node_modules

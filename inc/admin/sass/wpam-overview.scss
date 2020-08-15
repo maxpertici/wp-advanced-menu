@@ -1,0 +1,190 @@
+
+/*
+ *
+ *
+ *
+ *
+ * General
+ *
+ */
+
+ .wpam-admin-page-wrapper{
+    margin-top: 20px;
+    overflow: hidden;
+
+    padding-right: 21px;
+}
+
+.wpam-admin-page-wrapper *,
+.wpam-admin-page-wrapper *:before,
+.wpam-admin-page-wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpam-admin-page-section{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-inner{
+    overflow: hidden;
+    /*
+    @media (min-width:800px){
+        float: left;
+        width: 75%;
+    }
+    */
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Header
+ *
+ */
+
+ .wpam-admin-page-header{
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-header-banner{
+    /* background-color: #1d1d1d; */
+    max-height: 78px;
+    font-size: 0;
+}
+
+.wpam-admin-page-header-logo{
+    display: inline-block;
+    vertical-align: middle;
+
+    height: auto;
+    
+    position: relative;
+    right: -10px;
+
+    height: 48px;
+    width: auto;
+}
+
+.wpam-admin-page-header-title{
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0!important;
+    height: 0!important;
+}
+
+.wpam-admin-page-header .notice{
+    margin-top: 20px !important;
+}
+
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Section
+ *
+ */
+
+ .wpam-admin-page-section-title{
+    color : #fff;
+    margin : 0;
+    padding: 0 20px;
+    line-height: 48px;
+    background-color: #1d1d1d;
+}
+
+
+.wpam-admin-page-section-content{
+    margin : 0;
+    padding: 0 10px;
+}
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Themes
+ *
+ */
+
+ .wpam-admin-page-section-content-themes{
+    /* font-size: 0; */
+}
+
+.wpam-admin-page-themes-category-title{
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0;
+}
+
+.wpam-admin-page-themes-list{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.wpam-admin-theme{
+    
+    font-size: 16px;
+    padding: 20px;
+    margin: 10px;
+
+    flex-basis: calc( 100% - 20px );
+    @media ( min-width :  600px ){ flex-basis: calc( 50% - 20px ); }
+    @media ( min-width : 1200px ){ flex-basis: calc( 25% - 20px ); }
+    
+    background-color: #F5F5F7;
+    border: 1px solid #eaeaea;
+
+    cursor: pointer;
+}
+
+
+.wpam-admin-theme-title{
+    margin-top : 0 ;
+}
+
+.wpam-admin-theme-description{}
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Fancybox - override
+ *
+ */
+.fancybox-overlay{
+
+    @media( min-width:783px ){ left: 34px; }
+    @media( min-width:961px ){ left: 160px; }
+    
+}
+
+
+

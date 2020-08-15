@@ -1,0 +1,22 @@
+{
+  "name": "wp-advanced-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "fancybox": "^3.0.1",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Webographe@bitbucket.org/maxpertici/wp-advanced-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/maxpertici/wp-advanced-menu#readme"
+}

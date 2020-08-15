@@ -1,0 +1,376 @@
+
+/*
+ *
+ *
+ *
+ *
+ * General
+ *
+ */
+
+.wpam-admin-page-wrapper{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.wpam-admin-page-wrapper *,
+.wpam-admin-page-wrapper *:before,
+.wpam-admin-page-wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpam-admin-page-section{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-inner{
+    overflow: hidden;
+
+    @media (min-width:800px){
+        float: left;
+        width: 75%;
+    }
+}
+
+.wpam-inner-sidebar{
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width:800px){
+        padding-left : 16px;
+        float: left;
+        width: 25%;
+    }
+}
+
+
+/*
+ *
+ *
+ *
+ *
+ * Header
+ *
+ */
+
+.wpam-admin-page-header{
+    margin-bottom: 20px;
+}
+
+.wpam-admin-page-header-banner{
+    /* background-color: #1d1d1d; */
+    max-height: 78px;
+    font-size: 0;
+}
+
+.wpam-admin-page-header-logo{
+    display: inline-block;
+    vertical-align: middle;
+
+    height: auto;
+    
+    position: relative;
+    right: -10px;
+
+    height: 48px;
+    width: auto;
+}
+
+.wpam-admin-page-header-title{
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0!important;
+    height: 0!important;
+}
+
+.wpam-admin-page-header .notice{
+    margin-top: 20px !important;
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Notice
+ *
+ */
+
+ .wpam-admin-page-header .notice{
+    max-width: 100%;
+}
+
+
+/*
+ *
+ *
+ *
+ *
+ * Shortcut
+ *
+ */
+
+.wpam-button-shortcut{
+    
+    color: #fff;
+    background-color: #222;
+    
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.wpam-button-shortcut:hover,
+.wpam-button-shortcut:focus,
+.wpam-button-shortcut:active{
+    color : #222;
+    background-color: #ffed00;
+}
+
+
+/*
+ *
+ *
+ *
+ *
+ * Layout
+ *
+ */
+
+.wpam-admin-page-header-menu-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+
+    text-align: right;
+    font-size: 18px;
+    width: calc(100% - 170px);
+}
+
+.wpam-admin-page-header-menu{
+    padding-right: 20px;
+
+    @media (max-width:500px){
+        margin-top : 0;
+        margin-bottom : 0;
+        font-size: 12px;
+        overflow: hidden;
+        padding-right: 0;
+    }
+}
+
+.wpam-admin-page-header-menu li,
+.wpam-admin-page-header-menu a{
+    display: inline-block;
+}
+
+.wpam-admin-page-header-menu li{
+    margin-bottom : 0;
+    margin-left: 8px;
+
+    @media (max-width:500px){
+        float: right;
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+
+.wpam-admin-page-header-menu a{
+
+    @media (max-width:500px){
+        width : 40% ;
+        text-align: center;
+    }
+}
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Section
+ *
+ */
+
+.wpam-admin-page-section-title{
+    color : #fff;
+    margin : 0;
+    padding: 0 20px;
+    line-height: 48px;
+    background-color: #1d1d1d;
+}
+
+
+.wpam-admin-page-section-content{
+    margin : 0;
+    padding: 0 10px;
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Themes
+ *
+ */
+
+.wpam-admin-page-section-content-themes{
+    /* font-size: 0; */
+}
+
+.wpam-admin-page-themes-category-title{
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0;
+}
+
+.wpam-admin-page-themes-list{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.wpam-admin-theme{
+    
+    font-size: 16px;
+    padding: 20px;
+    margin: 10px;
+
+    flex-basis: calc( 100% - 20px );
+    @media ( min-width :  600px ){ flex-basis: calc( 50% - 20px ); }
+    @media ( min-width : 1200px ){ flex-basis: calc( 25% - 20px ); }
+    
+    background-color: #F5F5F7;
+    border: 1px solid #eaeaea;
+
+    cursor: pointer;
+}
+
+
+.wpam-admin-theme-title{
+    margin-top : 0 ;
+}
+
+.wpam-admin-theme-description{}
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Fancybox - override
+ *
+ */
+.fancybox-overlay{
+
+    @media( min-width:783px ){ left: 34px; }
+    @media( min-width:961px ){ left: 160px; }
+    
+}
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Licence
+ *
+ */
+
+.wpam-admin-page-section-content-licence{
+    padding: 0 20px;
+}
+
+.wpam-admin-page-licence-form input{
+    width: 100% ;
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Help
+ *
+ */
+
+.wpam-plugin-quote-user-help{
+
+    background: #fff;
+    padding: 1em;
+
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+
+    float: left;
+    clear: left;
+}
+
+.wpam-plugin-quote-user-help_avatar{
+    display : inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+
+    margin-right: 1em;
+}
+
+.wpam-plugin-quote-user-help_text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wpam-plugin-quote-user-help_text_title{
+    font-weight: 600;
+    font-size: 16px;
+    color:#222111;
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ * Colphon
+ *
+ */
+
+.wpam-plugin-colophon{
+    overflow: hidden;
+    clear: both;
+}
+
+.wpam-plugin-version-number{
+    display: inline-block;
+    float: left;
+
+    font-weight: bold;
+    color: #000;
+    
+    padding: 0.2em 0.4em;
+    background-color:#ffed00;
+}

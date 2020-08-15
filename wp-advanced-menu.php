@@ -203,8 +203,7 @@ function wpam_load_plugin_hooks(){
 function wpam_load_plugin_admin(){
 	
 	require( WPAM_ADMIN_PATH . '/wp_admin.php' );
-
-	// require( WPAM_ADMIN_PATH . '/pages/wpam_settings.php' );
+	
 	require( WPAM_ADMIN_PATH . '/pages/nav_menu.php' );
 	require( WPAM_ADMIN_PATH . '/pages/wpam_overview.php' );
 

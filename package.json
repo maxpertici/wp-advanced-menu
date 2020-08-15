@@ -2,21 +2,24 @@
   "name": "wp-advanced-menu",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "dependencies": {
+    "gulp-plumber": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
     "@fancyapps/fancybox": "^3.5.7",
-    "fancybox": "^3.0.1",
     "gulp": "^4.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "sass": "^1.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://Webographe@bitbucket.org/maxpertici/wp-advanced-menu.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/maxpertici/wp-advanced-menu#readme"
+  "keywords": [],
+  "author": "maxpertici",
+  "license": "ISC"
 }

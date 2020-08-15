@@ -1,7 +1,5 @@
 <?php
 
-
-
 defined( 'ABSPATH' ) or	die();
 
 // Plugin names
@@ -36,16 +34,6 @@ define( 'WPAM_LEGACY_MENU_METABOX'         , realpath( WPAM_INC_PATH . 'legacy-m
 // Composr & npm
 define( 'WPAM_VENDOR_PATH'                 , realpath( WPAM_PATH . 'vendor' )       . '/' );
 define( 'WPAM_NODE_MODULES'                , realpath( WPAM_PATH . 'node_modules' ) . '/' );
-
-// ACF Build-in
-/*
-define( 'WPAM_WPACKAGIST'                  , realpath( WPAM_VENDOR_PATH . 'wpackagist-plugin' ) . '/' );
-define( 'WPAM_ACF_BUILDIN'                 , realpath( WPAM_WPACKAGIST  . 'advanced-custom-fields' ) . '/' );
-define( 'WPAM_ACF_BUILDIN_INC'             , realpath( WPAM_ACF_BUILDIN . 'includes' )    . '/' );
-
-define( 'WPAM_ACF_BUILDIN_NAV_WALKERS'     , realpath( WPAM_ACF_BUILDIN_INC . 'walkers' )    . '/' );
-define( 'WPAM_ACF_BUILDIN_FORMS'           , realpath( WPAM_ACF_BUILDIN_INC . 'forms' )    . '/' );
-*/
 
 // Options
 define( 'WPAM_GENERAL_SETTINGS_SLUG'       , 'wpam_general_settings' );

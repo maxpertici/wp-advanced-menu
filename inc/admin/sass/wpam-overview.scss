@@ -7,8 +7,7 @@
  * General
  *
  */
-
- .wpam-admin-page-wrapper{
+.wpam-admin-page-wrapper{
     margin-top: 20px;
     overflow: hidden;
 
@@ -59,6 +58,8 @@
     /* background-color: #1d1d1d; */
     max-height: 78px;
     font-size: 0;
+
+    margin-bottom: 20px;
 }
 
 .wpam-admin-page-header-logo{
@@ -66,9 +67,10 @@
     vertical-align: middle;
 
     height: auto;
-    
+    /*
     position: relative;
     right: -10px;
+    */
 
     height: 48px;
     width: auto;
@@ -159,6 +161,8 @@
     border: 1px solid #eaeaea;
 
     cursor: pointer;
+    color : #23282d ;
+    text-decoration: none;
 }
 
 
@@ -188,3 +192,30 @@
 
 
 
+
+
+.theme-modal {
+    display: none;
+    
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0 40px 0;
+    text-align: justify;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .theme-modal .fancybox-close-small {
+    top: 15px;
+  }
+  
+  .theme-modal .content-header {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+  
+  .theme-modal .content-scroll {
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+    padding: 40px 20px 0 20px;
+  }

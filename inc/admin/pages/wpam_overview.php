@@ -15,9 +15,18 @@ function wpam_admin_render_overview(){
     <div class="wpam-admin-page-wrapper">
     <div class="wpam-admin-page-inner">
 
+    <div class="wpam-admin-page-header-banner">
+    <?php
+        // WP:AM logo
+        echo '<img class="wpam-admin-page-header-logo" src="' . plugins_url( '../img/wpam-logo.png', __FILE__ )
+        . '" title="' . esc_html( get_admin_page_title() ) . '" > ';
+
+        ?>
+    </div>
+
     <div class="wpam-admin-page-section" id="wpam-themes">
-        
-        <h2 class="wpam-admin-page-section-title"><?php echo __( 'Themes' , 'wp-advanced-menu');?></h2>
+
+    <h2 class="wpam-admin-page-section-title"><?php echo __( 'Themes' , 'wp-advanced-menu');?></h2>
         <?php
 
         $wpam_thems_bd = get_option( WPAM_THEMES_LIST_SLUG ) ;
@@ -164,10 +173,10 @@ function wpam_admin_overview_enqueue_scripts( $hook ){
     }
 
     // Fancybox
-    wp_register_script( 'wpam_node_modules_fancybox_script', plugins_url( 'node_modules/fancybox/dist/js/jquery.fancybox.pack.js', WPAM_NODE_MODULES ), false, true);
+    wp_register_script( 'wpam_node_modules_fancybox_script', plugins_url( 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js', WPAM_NODE_MODULES ), false, true);
     wp_enqueue_script( 'wpam_node_modules_fancybox_script' );
 
-    wp_register_style( 'wpam_node_modules_fancybox_style', plugins_url( 'node_modules/fancybox/dist/css/jquery.fancybox.css', WPAM_NODE_MODULES ) );
+    wp_register_style( 'wpam_node_modules_fancybox_style', plugins_url( 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css', WPAM_NODE_MODULES ) );
     wp_enqueue_style( 'wpam_node_modules_fancybox_style' );    
 
     // WP:AM

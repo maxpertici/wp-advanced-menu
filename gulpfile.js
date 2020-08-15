@@ -9,31 +9,31 @@ var plumber      = require("gulp-plumber");
 var sourcemaps   = require('gulp-sourcemaps');
 
 
-function wpam_sass_task(){
+function wpam_admin_sass_task(){
 
     return (
         gulp
-        .src( ['sass/*.scss','sass/**/*.scss'] )
+        .src( ['./inc/admin/sass/*.scss','./inc/admin/sass/**/*.scss'] )
         .pipe( sass().on('error', sass.logError) )
-        .pipe( gulp.dest('./css/') )
+        .pipe( gulp.dest('./inc/admin/css/') )
         .pipe( browserSync.stream() )
     );
 
 }
 
-function wpam_js_task(){
+function wpam_admin_js_task(){
 
     return (
         gulp.task('js', function () {
-            return gulp.src('./js/*js')
+            return gulp.src('./inc/admin/js/*js')
                 // .pipe( browserify() )
                 // .pipe( uglify() )
-                .pipe(gulp.dest('js/dist'));
+                .pipe(gulp.dest('./inc/admin/js/dist'));
         })
     );
 }
 
-function wpam_js_reload(){
+function wpam_admain_js_reload(){
     browserSync.reload();
     done();
 }
@@ -49,12 +49,12 @@ function wpam_launch(){
     })
 
     // sass
-    gulp.watch("./sass/*.scss", wpam_sass_task );
-    gulp.watch("./sass/**/*.scss", wpam_sass_task );
+    gulp.watch("./inc/admin/sass/*.scss", wpam_admin_sass_task );
+    gulp.watch("./inc/admin/sass/**/*.scss", wpam_admin_sass_task );
     
     // js
-    // gulp.watch("./js/*.js", wpam_js_task );
-    gulp.watch("./js/*.js", wpam_js_reload );
+    // gulp.watch("./inc/admin/js/*.js", wpam_admin_js_task );
+    gulp.watch("./inc/admin/js/*.js", wpam_admain_js_reload );
 
     // php
     // gulp.watch("./*.php"   ).on('change', browserSync.reload);

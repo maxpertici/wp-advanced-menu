@@ -55,10 +55,10 @@ function wpam_admin_menu() {
 	# CPT page
 	add_submenu_page(
 		'wpam-admin',
-		__('Elements','wp-advanced-menu'),
-		__('Elements','wp-advanced-menu'),
+		__('Contents','wp-advanced-menu'),
+		__('Contents','wp-advanced-menu'),
 		'manage_options',
-		'edit.php?post_type=wpam-element'
+		'edit.php?post_type=wpam-content'
 	);
 
 }
@@ -78,7 +78,7 @@ add_action('admin_menu', 'wpam_admin_menu');
 function wpam_admin_set_parent_file($parent_file) {
 	global $current_screen;
 	
-	if ($current_screen->post_type == 'wpam-element' ) {
+	if ($current_screen->post_type == 'wpam-content' ) {
 		if (in_array($current_screen->base, array('post', 'edit')) !== false) {
 			return 'wpam-admin'; # Parent menu slug
 		}

@@ -93,25 +93,25 @@ $wpam_custom_menu_item_spec = array(
      *  Element
      */
     
-    'element' => array(
+    'content' => array(
         
-        'label'  => __( 'Element' , 'wp-advanced-menu'),
+        'label'  => __( 'Content' , 'wp-advanced-menu'),
         
-        'slug' => 'element',
-        'prefix' => $wpam_prefix . 'element',
+        'slug' => 'content',
+        'prefix' => $wpam_prefix . 'content',
         
         'acf_group'  => array(
-            'key' => WPAM_ACF_PREFIX_GROUP.'wpam_group_nav_item_element',
-            'title' => __( 'Element settings group', 'wp-advanced-menu' ),
+            'key' => WPAM_ACF_PREFIX_GROUP.'wpam_group_nav_item_content',
+            'title' => __( 'Content settings group', 'wp-advanced-menu' ),
         ),
 
         'acf_fields' => array(
             
             array(
 
-                'key' => WPAM_ACF_PREFIX_FIELD.'wpam_field_wpam_nav_item_element_selector',
-                'label' => __( 'Elements', 'wp-advanced-menu' ),
-                'name' => 'wpam_nav_item_element_selector',
+                'key' => WPAM_ACF_PREFIX_FIELD.'wpam_field_wpam_nav_item_content_selector',
+                'label' => __( 'Contents', 'wp-advanced-menu' ),
+                'name' => 'wpam_nav_item_content_selector',
 
                 'type' => 'post_object',
                 'instructions' => '',
@@ -120,11 +120,11 @@ $wpam_custom_menu_item_spec = array(
 
                 'wrapper' => array(
                     'width' => '',
-                    'class' => 'wpam-element-settings-field__selector',
+                    'class' => 'wpam-content-settings-field__selector',
                     'id' => '',
                 ),
                 'post_type' => array(
-                    0 => 'wpam-element',
+                    0 => 'wpam-content',
                 ),
                 'taxonomy' => '',
                 'allow_null' => 0,

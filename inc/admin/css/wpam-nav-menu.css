@@ -83,9 +83,10 @@ Item types > icons
   /* background-color: #fdec00; */
   background: url(../img/icons/wpam-image.svg) center center/20px 20px no-repeat transparent; }
 
-#menu-to-edit .wpam-item__element .item-title:before {
+#menu-to-edit .wpam-item__wpblock .item-title:before,
+#menu-to-edit .wpam-item__content .item-title:before {
   /* background-color: #fdec00; */
-  background: url(../img/icons/wpam-element.svg) center center/20px 20px no-repeat transparent; }
+  background: url(../img/icons/wpam-content.svg) center center/20px 20px no-repeat transparent; }
 
 /*
 Menu item > submenu options

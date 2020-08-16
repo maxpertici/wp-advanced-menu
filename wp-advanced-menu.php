@@ -209,7 +209,7 @@ function wpam_load_plugin_admin(){
 
 	add_action( 'wp_update_nav_menu', 'wpam_build_transients', 10, 2 );
 
-	// add_action( 'registered_post_type', 'wpam_reusable_block_menu_display', 10, 2 );
+	add_action( 'registered_post_type', 'wpam_reusable_block_menu_display', 10, 2 );
 }
 
 function wpam_load_plugin_core(){

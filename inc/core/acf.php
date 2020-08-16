@@ -81,7 +81,7 @@ function wpam_load_acf_field(){
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-image.php' );
 
         // 90
-        include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-element.php' );
+        include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-content.php' );
 
         // 100
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-generic.php' );

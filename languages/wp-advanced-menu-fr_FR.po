@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-08-16 11:54+0200\n"
-"PO-Revision-Date: 2020-08-16 11:57+0200\n"
+"POT-Creation-Date: 2020-08-16 22:17+0200\n"
+"PO-Revision-Date: 2020-08-16 22:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -98,13 +98,14 @@ msgid "From themes"
 msgstr "Fournis par les themes."
 
 #: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
-#: inc/core/item-types.php:157
+#: inc/core/item-types.php:163
 msgid "Reusable Blocks"
 msgstr "Blocs réutilisables"
 
 #: inc/admin/wp_admin.php:34 inc/admin/wp_admin.php:35
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
-#: inc/legacy-menu-metabox/wpam-menu-item-types.php:100
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:110
+#: inc/legacy-menu-metabox/wpam-menu-item-types.php:101
 msgid "WP:AM"
 msgstr "WP:AM"
 
@@ -113,9 +114,9 @@ msgid "Overview"
 msgstr "Général"
 
 #: inc/admin/wp_admin.php:58 inc/admin/wp_admin.php:59
-#: inc/core/item-types.php:109
-msgid "Elements"
-msgstr "Éléments"
+#: inc/core/item-types.php:113
+msgid "Contents"
+msgstr ""
 
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:45
 msgid "Advanced settings"
@@ -150,39 +151,41 @@ msgid "Media queries"
 msgstr "Media queries"
 
 #: inc/core/item-types.php:43
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:110
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:119
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:124
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:141
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:150
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:155
 msgid "Image"
 msgstr "Image"
 
-#: inc/core/item-types.php:48
+#: inc/core/item-types.php:50
 msgid "Image settings group"
 msgstr "Groupe de réglages d’image"
 
-#: inc/core/item-types.php:55
+#: inc/core/item-types.php:57
 msgid "Image settings"
 msgstr "Réglages de l’image"
 
-#: inc/core/item-types.php:96
+#: inc/core/item-types.php:98
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:119
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:124
+msgid "Content"
+msgstr "Contenus"
+
+#: inc/core/item-types.php:105
+msgid "Content settings group"
+msgstr "Groupe de réglages du contenu"
+
+#: inc/core/item-types.php:149
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
-msgid "Element"
-msgstr "Élément"
-
-#: inc/core/item-types.php:101
-msgid "Element settings group"
-msgstr "Groupe de réglages d’Élément"
-
-#: inc/core/item-types.php:145
 msgid "Block"
 msgstr "Bloc"
 
-#: inc/core/item-types.php:150
+#: inc/core/item-types.php:156
 msgid "Block settings group"
 msgstr "Groupe de réglages de Bloc"
 
-#: inc/core/item-types.php:163
+#: inc/core/item-types.php:169
 #, php-format
 msgid ""
 "Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href=\"post-"
@@ -191,91 +194,91 @@ msgstr ""
 "Choisissez votre <a href=\"edit.php?post_type=wp_block\">%s</a> ou <a href="
 "\"post-new.php?post_type=wp_block\">%s</a> si vide."
 
-#: inc/core/item-types.php:164
+#: inc/core/item-types.php:170
 msgid "reusable block"
 msgstr "Bloc réutilisable"
 
-#: inc/core/item-types.php:165
+#: inc/core/item-types.php:171
 msgid "create one"
 msgstr "créez en un"
 
-#: inc/core/item-types.php:199
+#: inc/core/item-types.php:205
 msgid "Post Type Archive"
 msgstr "Archive de type de publication"
 
-#: inc/core/item-types.php:215
+#: inc/core/item-types.php:223
 msgid "Menu"
 msgstr "Menu"
 
-#: inc/core/item-types.php:229
+#: inc/core/item-types.php:239
 msgid "Item"
 msgstr "Élément"
 
-#: inc/core/item-types.php:234
+#: inc/core/item-types.php:246
 msgid "Item settings group"
 msgstr "Groupe de réglages d'élément"
 
-#: inc/core/item-types.php:241
+#: inc/core/item-types.php:253
 msgid "Submenu type"
 msgstr "Type de sous-menu"
 
-#: inc/core/item-types.php:253
+#: inc/core/item-types.php:265
 msgid "Default"
 msgstr "Par défaut"
 
-#: inc/core/item-types.php:254
+#: inc/core/item-types.php:266
 msgid "Columns"
 msgstr "Colonnes"
 
-#: inc/core/item-types.php:268
+#: inc/core/item-types.php:280
 msgid "Number of columns"
 msgstr "Nombre de colonnes"
 
-#: inc/core/item-types.php:289
+#: inc/core/item-types.php:301
 msgid "Two"
 msgstr "Deux"
 
-#: inc/core/item-types.php:290
+#: inc/core/item-types.php:302
 msgid "Three"
 msgstr "Trois"
 
-#: inc/core/item-types.php:291
+#: inc/core/item-types.php:303
 msgid "Four"
 msgstr "Quatre"
 
-#: inc/core/item-types.php:292
+#: inc/core/item-types.php:304
 msgid "Five"
 msgstr "Cinq"
 
-#: inc/core/item-types.php:293
+#: inc/core/item-types.php:305
 msgid "Six"
 msgstr "Six"
 
-#: inc/core/item-types.php:294
+#: inc/core/item-types.php:306
 msgid "Seven"
 msgstr "Sept"
 
-#: inc/core/item-types.php:295
+#: inc/core/item-types.php:307
 msgid "Eight"
 msgstr "Huit"
 
-#: inc/core/item-types.php:296
+#: inc/core/item-types.php:308
 msgid "Nine"
 msgstr "Neuf"
 
-#: inc/core/item-types.php:297
+#: inc/core/item-types.php:309
 msgid "Ten"
 msgstr "Dix"
 
 #: inc/core/post-types.php:14
 msgctxt "Post type general name"
-msgid "Nav. elements"
-msgstr "Éléments de navigation"
+msgid "Contents"
+msgstr "Contenus"
 
 #: inc/core/post-types.php:15
 msgctxt "Post type singular name"
-msgid "Nav. element"
-msgstr "Élément de navigation"
+msgid "Content"
+msgstr "Contenu"
 
 #: inc/core/post-types.php:16
 msgctxt "Admin Menu text"
@@ -284,54 +287,54 @@ msgstr "WP:AM"
 
 #: inc/core/post-types.php:17
 msgctxt "Add New on Toolbar"
-msgid "Nav. element"
-msgstr "Élément de navigation"
+msgid "Content"
+msgstr "Contenu"
 
 #: inc/core/post-types.php:18
 msgid "Add New"
 msgstr "Ajouter"
 
 #: inc/core/post-types.php:19
-msgid "Add New element"
-msgstr "Ajouter un élément"
+msgid "Add New content"
+msgstr "Ajouter"
 
 #: inc/core/post-types.php:20
-msgid "New element"
-msgstr "Nouvel élement"
+msgid "New content"
+msgstr "Nouveau contenu"
 
 #: inc/core/post-types.php:21
-msgid "Edit Element"
-msgstr "Modifier l’élément"
+msgid "Edit Content"
+msgstr "Modifier le contenu"
 
 #: inc/core/post-types.php:22
-msgid "View Element"
-msgstr "Voir l’élément"
+msgid "View Content"
+msgstr "Voir le contenu"
 
 #: inc/core/post-types.php:23
-msgid "All Elements"
-msgstr "Tous les éléments"
+msgid "All Contents"
+msgstr "Tous les contenus"
 
 #: inc/core/post-types.php:24
-msgid "Search Elements"
-msgstr "Rechercher des éléments"
+msgid "Search Contents"
+msgstr "Rechercher les contenus"
 
 #: inc/core/post-types.php:25
-msgid "Parent Elements:"
+msgid "Parent Contents:"
 msgstr ""
 
 #: inc/core/post-types.php:26
-msgid "No elements found."
-msgstr "Pas d’éléments trouvés."
+msgid "No contents found."
+msgstr "Pas de contenus trouvés."
 
 #: inc/core/post-types.php:27
-msgid "No elements found in Trash."
-msgstr "Pas d‘éléments dans la corbeille."
+msgid "No contents found in Trash."
+msgstr "Pas de contenus dans la corbeille."
 
 #: inc/core/post-types.php:28
 msgctxt ""
 "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
-msgid "Element Cover Image"
-msgstr "Image à la une de l’élément"
+msgid "Content Cover Image"
+msgstr ""
 
 #: inc/core/post-types.php:29
 msgctxt ""
@@ -355,43 +358,43 @@ msgstr "Utiliser comme image à la une"
 msgctxt ""
 "The post type archive label used in nav menus. Default “Post Archives”. "
 "Added in 4.4"
-msgid "Element archives"
-msgstr "Archives d’éléments"
+msgid "Content archives"
+msgstr ""
 
 #: inc/core/post-types.php:33
 msgctxt ""
 "Overrides the “Insert into post”/”Insert into page” phrase (used when "
 "inserting media into a post). Added in 4.4"
-msgid "Insert into element"
-msgstr "Insérer dans l’élément"
+msgid "Insert into content"
+msgstr ""
 
 #: inc/core/post-types.php:34
 msgctxt ""
 "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
 "when viewing media attached to a post). Added in 4.4"
-msgid "Uploaded to this element"
-msgstr "Téléverser dans cet élément"
+msgid "Uploaded to this content"
+msgstr ""
 
 #: inc/core/post-types.php:35
 msgctxt ""
 "Screen reader text for the filter links heading on the post type listing "
 "screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
-msgid "Filter elements list"
-msgstr "Filtrer la liste d’éléments"
+msgid "Filter contents list"
+msgstr ""
 
 #: inc/core/post-types.php:36
 msgctxt ""
 "Screen reader text for the pagination heading on the post type listing "
 "screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
-msgid "Elements list navigation"
-msgstr "Liste des éléments de navigtaion"
+msgid "Contents list navigation"
+msgstr ""
 
 #: inc/core/post-types.php:37
 msgctxt ""
 "Screen reader text for the items list heading on the post type listing "
 "screen. Default “Posts list”/”Pages list”. Added in 4.4"
-msgid "Elements list"
-msgstr "Liste d’éléments"
+msgid "Contents list"
+msgstr ""
 
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:24
 msgid "Custom Items"
@@ -403,7 +406,7 @@ msgstr "Éléments personnalisés"
 msgid "View All"
 msgstr "Voir tout"
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:135
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:166
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:128
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:132
 msgid "Add to Menu"
@@ -441,6 +444,93 @@ msgstr "Maxime Pertici"
 #. Author URI of the plugin/theme
 msgid "https://m.pertici.fr"
 msgstr "https://m.pertici.fr"
+
+#~ msgid "Elements"
+#~ msgstr "Éléments"
+
+#~ msgid "Element"
+#~ msgstr "Élément"
+
+#~ msgid "Element settings group"
+#~ msgstr "Groupe de réglages d’Élément"
+
+#~ msgctxt "Post type general name"
+#~ msgid "Nav. elements"
+#~ msgstr "Éléments de navigation"
+
+#~ msgctxt "Post type singular name"
+#~ msgid "Nav. element"
+#~ msgstr "Élément de navigation"
+
+#~ msgctxt "Add New on Toolbar"
+#~ msgid "Nav. element"
+#~ msgstr "Élément de navigation"
+
+#~ msgid "Add New element"
+#~ msgstr "Ajouter un élément"
+
+#~ msgid "New element"
+#~ msgstr "Nouvel élement"
+
+#~ msgid "Edit Element"
+#~ msgstr "Modifier l’élément"
+
+#~ msgid "View Element"
+#~ msgstr "Voir l’élément"
+
+#~ msgid "All Elements"
+#~ msgstr "Tous les éléments"
+
+#~ msgid "Search Elements"
+#~ msgstr "Rechercher des éléments"
+
+#~ msgid "No elements found."
+#~ msgstr "Pas d’éléments trouvés."
+
+#~ msgid "No elements found in Trash."
+#~ msgstr "Pas d‘éléments dans la corbeille."
+
+#~ msgctxt ""
+#~ "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+#~ msgid "Element Cover Image"
+#~ msgstr "Image à la une de l’élément"
+
+#~ msgctxt ""
+#~ "The post type archive label used in nav menus. Default “Post Archives”. "
+#~ "Added in 4.4"
+#~ msgid "Element archives"
+#~ msgstr "Archives d’éléments"
+
+#~ msgctxt ""
+#~ "Overrides the “Insert into post”/”Insert into page” phrase (used when "
+#~ "inserting media into a post). Added in 4.4"
+#~ msgid "Insert into element"
+#~ msgstr "Insérer dans l’élément"
+
+#~ msgctxt ""
+#~ "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase "
+#~ "(used when viewing media attached to a post). Added in 4.4"
+#~ msgid "Uploaded to this element"
+#~ msgstr "Téléverser dans cet élément"
+
+#~ msgctxt ""
+#~ "Screen reader text for the filter links heading on the post type listing "
+#~ "screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+#~ msgid "Filter elements list"
+#~ msgstr "Filtrer la liste d’éléments"
+
+#~ msgctxt ""
+#~ "Screen reader text for the pagination heading on the post type listing "
+#~ "screen. Default “Posts list navigation”/”Pages list navigation”. Added in "
+#~ "4.4"
+#~ msgid "Elements list navigation"
+#~ msgstr "Liste des éléments de navigtaion"
+
+#~ msgctxt ""
+#~ "Screen reader text for the items list heading on the post type listing "
+#~ "screen. Default “Posts list”/”Pages list”. Added in 4.4"
+#~ msgid "Elements list"
+#~ msgstr "Liste d’éléments"
 
 #~ msgctxt "Post type singular name"
 #~ msgid "Nav element"

@@ -7,9 +7,9 @@ if( function_exists('acf_add_local_field_group') ){
     acf_add_local_field_group(array(
 
         
-        'key'      => $wpam_custom_menu_item_spec['element']['acf_group']['key'],
-        'title'    => $wpam_custom_menu_item_spec['element']['acf_group']['title'],
-        'fields'   => $wpam_custom_menu_item_spec['element']['acf_fields'],
+        'key'      => $wpam_custom_menu_item_spec['content']['acf_group']['key'],
+        'title'    => $wpam_custom_menu_item_spec['content']['acf_group']['title'],
+        'fields'   => $wpam_custom_menu_item_spec['content']['acf_fields'],
 
         'location' => array(
             array(

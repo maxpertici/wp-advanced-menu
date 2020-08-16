@@ -330,13 +330,13 @@ jQuery(document).ready(function($){
         
         if( item_type ){
 
-            // TODO : translation support
+            // TODO : improve translation support
+            // TODO : make this list dynamic
             if(
                 item_type === 'image'   ||
                 item_type === 'wpblock' ||
                 item_type === 'menu'    ||
-
-                item_type === 'element'
+                item_type === 'content'
 
                 ){
                 nav_menu_item.find( '.field-url' ).hide();

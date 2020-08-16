@@ -58,17 +58,6 @@ function wpam_admin_menu() {
 		'edit.php?post_type=wpam-element'
 	);
 
-	# Let's add another normal admin subpage just for the heck of it
-	/*
-	add_submenu_page(
-		'wpam-admin', 
-		'Settings',
-		'Settings',
-		'manage_options',
-		'wpam_admin_settings',
-		'function_to_render_settings_page_content'
-	);
-	*/
 }
 
 add_action('admin_menu', 'wpam_admin_menu');
@@ -85,18 +74,13 @@ add_action('admin_menu', 'wpam_admin_menu');
  */
 function wpam_admin_set_parent_file($parent_file) {
 	global $current_screen;
+	
 	if ($current_screen->post_type == 'wpam-element' ) {
 		if (in_array($current_screen->base, array('post', 'edit')) !== false) {
 			return 'wpam-admin'; # Parent menu slug
 		}
 	}
-	/*
-	if ($current_screen->taxonomy == 'gadget_type') {
-		if (in_array($current_screen->base, array('term', 'edit-tags')) !== false) {
-			return 'gadget_manager';
-		}
-	}
-	*/
+
 	return $parent_file;
 }
 

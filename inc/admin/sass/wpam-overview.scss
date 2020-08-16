@@ -27,6 +27,8 @@
     border: 1px solid #e5e5e5;
     box-shadow: 0 1px 1px rgba(0,0,0,.04);
     margin-bottom: 20px;
+
+    overflow: hidden;
 }
 
 .wpam-admin-page-inner{
@@ -144,7 +146,6 @@
     
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .wpam-admin-theme{
@@ -180,6 +181,89 @@
  *
  *
  *
+ * General
+ *
+ */
+
+ .wpam-admin-page-section-general .wpam-admin-page-section-title{
+     display: none;
+ }
+
+ 
+
+
+ .wpam-admin-page-section-content-col{
+
+    float: left;
+
+    &.wpam-admin-col-size-4{
+        width: 33.33333%;
+
+        @media( max-width : 782px ){
+            width: 50%;
+        }
+
+        @media( max-width : 600px ){
+            width: 100%;
+        }
+    }
+
+ }
+
+ .wpam-admin-page-info-list{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.wpam-admin-page-info-col-title{
+    font-size: 16px;
+    padding: 16px 10px;
+    margin: 0;
+}
+
+.wpam-admin-page-section-content-col{}
+
+.wpam-admin-page-info-col-title{}
+
+.wpam-admin-page-info-col-content{
+    overflow: hidden;
+    
+    p, ul{
+        padding : 0 10px;
+    }
+}
+
+
+.wpam-admin-page-info__brand-text{
+    font-size: 14px;
+}
+.wpam-admin-page-info__brand-text__title{
+    /*
+    margin-top: 10px;
+    margin-bottom: 0;
+    */
+}
+
+.wpam-admin-page-info__brand-avatar{
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding : 4px;
+}
+
+
+
+
+
+
+/*
+ *
+ *
+ *
+ *
  * Fancybox - override
  *
  */
@@ -206,7 +290,7 @@
   }
   
   .theme-modal .fancybox-close-small {
-    top: 15px;
+    top: 7px;
   }
   
   .theme-modal .content-header {
@@ -219,3 +303,8 @@
     overflow: auto;
     padding: 40px 20px 0 20px;
   }
+
+
+
+
+

@@ -126,8 +126,8 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 			$submenu_column_number = get_field(  'wpam_nav_item_generic_submenu_colmuns_number', $item->ID ) ;
 			$submenu_settings->colmuns_number = $submenu_column_number ;
 
-			$submenu_settings->class .= 'wpam-submenu__columns' . ' ';
-			$submenu_settings->class .= 'wpam-submenu__' .  $submenu_settings->colmuns_number ;
+			$submenu_settings->class .= 'wpam-submenu-columns' . ' ';
+			$submenu_settings->class .= 'wpam-submenu-' .  $submenu_settings->colmuns_number ;
 			
 		}
 

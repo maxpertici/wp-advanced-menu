@@ -8,8 +8,9 @@
  * 
  * 
  */
+
 ?>
-<a <?php echo $attributes ;?>>
+<span class="wpam-item-element__content wpam-item-element-<?php echo sanitize_title( $args->wpam->wp_item->post_title ); ?>">
 <?php
 
     echo $args->link_before ;
@@ -25,4 +26,4 @@
     echo  $args->link_after ;
 
 ?>
-</a>
+</span>

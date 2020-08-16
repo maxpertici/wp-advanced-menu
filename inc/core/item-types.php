@@ -41,6 +41,8 @@ $wpam_custom_menu_item_spec = array(
      */
     'image' => array(
         'label'      => __( 'Image' , 'wp-advanced-menu'),
+        
+        'slug' => 'image',
         'prefix'     => $wpam_prefix . 'image',
 
         'acf_group'  => array(
@@ -94,8 +96,10 @@ $wpam_custom_menu_item_spec = array(
     'element' => array(
         
         'label'  => __( 'Element' , 'wp-advanced-menu'),
+        
+        'slug' => 'element',
         'prefix' => $wpam_prefix . 'element',
-
+        
         'acf_group'  => array(
             'key' => WPAM_ACF_PREFIX_GROUP.'wpam_group_nav_item_element',
             'title' => __( 'Element settings group', 'wp-advanced-menu' ),
@@ -143,6 +147,8 @@ $wpam_custom_menu_item_spec = array(
     
     'wpblock' => array(
         'label'      => __( 'Block' , 'wp-advanced-menu'),
+        
+        'slug' => 'wpblock',
         'prefix'     => $wpam_prefix . 'wpblock',
 
         'acf_group'  => array(
@@ -197,6 +203,8 @@ $wpam_custom_menu_item_spec = array(
     
     'post_type_archive' => array(
         'label'  => __( 'Post Type Archive' , 'wp-advanced-menu'),
+        'slug' => 'post_type_archive',
+
         'prefix' => $wpam_prefix . 'post_type_archive',
 
         'acf_group'  => '',
@@ -213,6 +221,8 @@ $wpam_custom_menu_item_spec = array(
     
     'menu' => array(
         'label'  => __( 'Menu' , 'wp-advanced-menu'),
+        'slug' => 'menu',
+
         'prefix' => $wpam_prefix . 'menu',
 
         'acf_group'  => '',
@@ -227,6 +237,8 @@ $wpam_custom_menu_item_spec = array(
      */
     'item' => array(
         'label'  => __( 'Item' , 'wp-advanced-menu'),
+        'slug' => 'item',
+
         'prefix' => $wpam_prefix . 'item',
 
         'acf_group'  => array(

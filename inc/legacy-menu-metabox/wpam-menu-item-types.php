@@ -73,6 +73,7 @@ function wpam_setup_nav_menu_item( $menu_item ){
         
         if( $is_wpam_item ){
 
+            
             // When item is added to menu, set flag
             if( isset( $menu_item->post_status ) && $menu_item->post_status == 'draft' ){
         

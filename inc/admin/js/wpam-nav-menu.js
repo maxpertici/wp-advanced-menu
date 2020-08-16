@@ -242,16 +242,17 @@ jQuery(document).ready(function($){
         var nav_menu_item_type_marker = nav_menu_item.find('.menu-item-handle .item-controls .item-type');
         var nav_menu_item_type_marker_text = nav_menu_item_type_marker.text() ;
         
+        // clean pass 1
         var re = /WP\:AM \— /gi;
         var chn = nav_menu_item_type_marker_text;
         var nav_menu_item_type = chn.replace(re, '');
 
+        // Test opur branding, etc
         var str = nav_menu_item_type_marker_text;
         var re = /WP\:AM/i;
         var is_custom_nav_menu_item = str.match(re);
-       
+    
         the_custom_nav_item_type = false ;
-
 
         if( is_custom_nav_menu_item != null){
             
@@ -261,19 +262,24 @@ jQuery(document).ready(function($){
             // Already knew ?
             var attr_data_wpam_item = nav_menu_item.find('input.menu-item-data-type').attr( 'data-wpam-item' );
             
-
             // if not -> do the trick
             var nav_item_type_specs = Object.keys( wpam_nav_menu_js_vars.custom_menu_item_spec );
-            
+
             if( attr_data_wpam_item === undefined ){
 
                 // Loop and find item type
                 for( var i = 0 ; i < nav_item_type_specs.length ; i++){
                     var item_type = nav_item_type_specs[i] ;
+                    
+                    // elmeent and item has same translation :/
+                    // stop on the first result for deine item type -> break;
+                    // test are on label...
 
                     if( nav_menu_item_type ===  wpam_nav_menu_js_vars.custom_menu_item_spec[item_type].label ){
                         the_custom_nav_item_type = item_type ;
+                        break;
                     }
+                    
                 }
 
                 // Brand item
@@ -283,13 +289,13 @@ jQuery(document).ready(function($){
 
                     nav_menu_item_type_marker.html( nav_menu_item_type + sup_brand );
                 }
+                
             
             }else{
-
-                the_custom_nav_item_type = attr_data_wpam_item;
+               the_custom_nav_item_type = attr_data_wpam_item;
 
             }
-            
+
             // Write data attr for css icon in admin page
 
             // nav_menu_item.find('input.menu-item-data-type').attr( 'data-wpam-item', item_type);
@@ -324,11 +330,14 @@ jQuery(document).ready(function($){
         
         if( item_type ){
 
+            // TODO : translation support
             if(
                 item_type === 'image'   ||
                 item_type === 'wpblock' ||
                 item_type === 'menu'    ||
+
                 item_type === 'element'
+
                 ){
                 nav_menu_item.find( '.field-url' ).hide();
             }

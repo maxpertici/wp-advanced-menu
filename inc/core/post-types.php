@@ -11,10 +11,10 @@ defined( 'ABSPATH' ) or	die();
 function wpam_create_element_post_type() {
  
     $labels = array(
-        'name'                  => _x( 'WP:AM', 'Post type general name', 'wp-advanced-menu' ),
-        'singular_name'         => _x( 'Nav element', 'Post type singular name', 'wp-advanced-menu' ),
+        'name'                  => _x( 'Nav. elements', 'Post type general name', 'wp-advanced-menu' ),
+        'singular_name'         => _x( 'Nav. element', 'Post type singular name', 'wp-advanced-menu' ),
         'menu_name'             => _x( 'WP:AM', 'Admin Menu text', 'wp-advanced-menu' ),
-        'name_admin_bar'        => _x( 'Nav element', 'Add New on Toolbar', 'wp-advanced-menu' ),
+        'name_admin_bar'        => _x( 'Nav. element', 'Add New on Toolbar', 'wp-advanced-menu' ),
         'add_new'               => __( 'Add New', 'wp-advanced-menu' ),
         'add_new_item'          => __( 'Add New element', 'wp-advanced-menu' ),
         'new_item'              => __( 'New element', 'wp-advanced-menu' ),

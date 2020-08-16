@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-01-09 17:12+0100\n"
+"POT-Creation-Date: 2020-08-16 11:54+0200\n"
 "PO-Revision-Date: 2018-06-01 20:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,85 +23,105 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: vendor\n"
 "X-Poedit-SearchPathExcluded-3: .\n"
 
-#: inc/admin/nav_menu.php:31
+#: inc/admin/pages/nav_menu.php:31
 msgid "Save menu to see options."
 msgstr ""
 
-#: inc/admin/wpam_settings.php:135 inc/admin/wpam_settings.php:179
-msgid "Themes"
+#: inc/admin/pages/wpam_overview.php:28
+#: inc/core/acf-fields/acf-nav-menu-general-settings.php:49
+msgid "General"
 msgstr ""
 
-#: inc/admin/wpam_settings.php:137 inc/admin/wpam_settings.php:281
-msgid "Licence"
+#: inc/admin/pages/wpam_overview.php:33
+msgid "Informations"
 msgstr ""
 
-#: inc/admin/wpam_settings.php:152
-msgid "Settings Saved"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:164
-msgid "Please validate your licence key for using this plugin."
-msgstr ""
-
-#: inc/admin/wpam_settings.php:167
-msgid "You've forgot your licence key ?"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:168
-msgid "Don't worry."
-msgstr ""
-
-#: inc/admin/wpam_settings.php:169
-msgid "Follow this link."
-msgstr ""
-
-#: inc/admin/wpam_settings.php:217
-msgid "Included in WP:AM"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:237
-msgid "From plugins"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:258
-msgid "From themes"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:289
-msgid "Licence key"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:305
-msgid "Validate license key"
-msgstr ""
-
-#: inc/admin/wpam_settings.php:322
+#: inc/admin/pages/wpam_overview.php:46
 #, php-format
 msgid ""
 "Hi ! It’s <a href=\"%s\" target=\"_blank\">@maxpertici</a>, the developer "
-"of WP Advanced Menu"
+"of WP Advanced Menu."
 msgstr ""
 
-#: inc/admin/wpam_settings.php:327
-#, php-format
+#: inc/admin/pages/wpam_overview.php:53
 msgid ""
-"For feedback, requests for assistance or documentation : <a href=\"%s\" "
-"target=\"_blank\">everything is here</a>."
+"This plugin allows developers to create layouts and functionality for "
+"navigation menus. This plugin is still experimental at the moment."
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:63
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:69
+msgid "Draft documentation is available (and almost up to date)"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:75
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Go to documentation →</a>"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:87
+msgid "Feedback"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:93
+msgid ""
+"All feedback is welcome. It helps me improve this plugin. Thanks for your "
+"help :)"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:99
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Write feedback →</a>"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:115
+msgid "Themes"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:162
+msgid "Included in WP:AM"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:193
+msgid "From plugins"
+msgstr ""
+
+#: inc/admin/pages/wpam_overview.php:225
+msgid "From themes"
+msgstr ""
+
+#: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
+#: inc/core/item-types.php:157
+msgid "Reusable Blocks"
+msgstr ""
+
+#: inc/admin/wp_admin.php:34 inc/admin/wp_admin.php:35
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
+#: inc/legacy-menu-metabox/wpam-menu-item-types.php:100
+msgid "WP:AM"
+msgstr ""
+
+#: inc/admin/wp_admin.php:47 inc/admin/wp_admin.php:48
+msgid "Overview"
+msgstr ""
+
+#: inc/admin/wp_admin.php:58 inc/admin/wp_admin.php:59
+#: inc/core/item-types.php:109
+msgid "Elements"
 msgstr ""
 
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:45
 msgid "Advanced settings"
 msgstr ""
 
-#: inc/core/acf-fields/acf-nav-menu-general-settings.php:49
-msgid "General"
-msgstr ""
-
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:65
 msgid "Theme"
 msgstr ""
 
-#: inc/core/acf-fields/acf-nav-menu-general-settings.php:88
+#: inc/core/acf-fields/acf-nav-menu-general-settings.php:87
 msgid "Override"
 msgstr ""
 
@@ -109,109 +129,294 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: inc/core/acf.php:200
+#: inc/core/acf.php:48
+msgid "Please install and activate"
+msgstr ""
+
+#: inc/core/acf.php:48
+msgid "for using WP:AM plugin."
+msgstr ""
+
+#: inc/core/acf.php:49
+msgid "Ignore this message."
+msgstr ""
+
+#: inc/core/acf.php:190
 msgid "Media queries"
 msgstr ""
 
-#: inc/core/item-types.php:38
-msgid "Item"
-msgstr ""
-
 #: inc/core/item-types.php:43
-msgid "Item settings group"
-msgstr ""
-
-#: inc/core/item-types.php:49
-msgid "Submenu type"
-msgstr ""
-
-#: inc/core/item-types.php:61
-msgid "Default"
-msgstr ""
-
-#: inc/core/item-types.php:62
-msgid "Columns"
-msgstr ""
-
-#: inc/core/item-types.php:76
-msgid "Number of columns"
-msgstr ""
-
-#: inc/core/item-types.php:97
-msgid "Two"
-msgstr ""
-
-#: inc/core/item-types.php:98
-msgid "Three"
-msgstr ""
-
-#: inc/core/item-types.php:99
-msgid "Four"
-msgstr ""
-
-#: inc/core/item-types.php:100
-msgid "Five"
-msgstr ""
-
-#: inc/core/item-types.php:101
-msgid "Six"
-msgstr ""
-
-#: inc/core/item-types.php:102
-msgid "Seven"
-msgstr ""
-
-#: inc/core/item-types.php:103
-msgid "Eight"
-msgstr ""
-
-#: inc/core/item-types.php:104
-msgid "Nine"
-msgstr ""
-
-#: inc/core/item-types.php:105
-msgid "Ten"
-msgstr ""
-
-#: inc/core/item-types.php:139
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:70
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:85
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:110
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:119
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:124
 msgid "Image"
 msgstr ""
 
-#: inc/core/item-types.php:144
+#: inc/core/item-types.php:48
 msgid "Image settings group"
 msgstr ""
 
-#: inc/core/item-types.php:151
+#: inc/core/item-types.php:55
 msgid "Image settings"
+msgstr ""
+
+#: inc/core/item-types.php:96
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
+msgid "Element"
+msgstr ""
+
+#: inc/core/item-types.php:101
+msgid "Element settings group"
+msgstr ""
+
+#: inc/core/item-types.php:145
+msgid "Block"
+msgstr ""
+
+#: inc/core/item-types.php:150
+msgid "Block settings group"
+msgstr ""
+
+#: inc/core/item-types.php:163
+#, php-format
+msgid ""
+"Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href="
+"\"post-new.php?post_type=wp_block\">%s</a> if empty."
+msgstr ""
+
+#: inc/core/item-types.php:164
+msgid "reusable block"
+msgstr ""
+
+#: inc/core/item-types.php:165
+msgid "create one"
+msgstr ""
+
+#: inc/core/item-types.php:199
+msgid "Post Type Archive"
+msgstr ""
+
+#: inc/core/item-types.php:215
+msgid "Menu"
+msgstr ""
+
+#: inc/core/item-types.php:229
+msgid "Item"
+msgstr ""
+
+#: inc/core/item-types.php:234
+msgid "Item settings group"
+msgstr ""
+
+#: inc/core/item-types.php:241
+msgid "Submenu type"
+msgstr ""
+
+#: inc/core/item-types.php:253
+msgid "Default"
+msgstr ""
+
+#: inc/core/item-types.php:254
+msgid "Columns"
+msgstr ""
+
+#: inc/core/item-types.php:268
+msgid "Number of columns"
+msgstr ""
+
+#: inc/core/item-types.php:289
+msgid "Two"
+msgstr ""
+
+#: inc/core/item-types.php:290
+msgid "Three"
+msgstr ""
+
+#: inc/core/item-types.php:291
+msgid "Four"
+msgstr ""
+
+#: inc/core/item-types.php:292
+msgid "Five"
+msgstr ""
+
+#: inc/core/item-types.php:293
+msgid "Six"
+msgstr ""
+
+#: inc/core/item-types.php:294
+msgid "Seven"
+msgstr ""
+
+#: inc/core/item-types.php:295
+msgid "Eight"
+msgstr ""
+
+#: inc/core/item-types.php:296
+msgid "Nine"
+msgstr ""
+
+#: inc/core/item-types.php:297
+msgid "Ten"
+msgstr ""
+
+#: inc/core/post-types.php:14
+msgctxt "Post type general name"
+msgid "Nav. elements"
+msgstr ""
+
+#: inc/core/post-types.php:15
+msgctxt "Post type singular name"
+msgid "Nav. element"
+msgstr ""
+
+#: inc/core/post-types.php:16
+msgctxt "Admin Menu text"
+msgid "WP:AM"
+msgstr ""
+
+#: inc/core/post-types.php:17
+msgctxt "Add New on Toolbar"
+msgid "Nav. element"
+msgstr ""
+
+#: inc/core/post-types.php:18
+msgid "Add New"
+msgstr ""
+
+#: inc/core/post-types.php:19
+msgid "Add New element"
+msgstr ""
+
+#: inc/core/post-types.php:20
+msgid "New element"
+msgstr ""
+
+#: inc/core/post-types.php:21
+msgid "Edit Element"
+msgstr ""
+
+#: inc/core/post-types.php:22
+msgid "View Element"
+msgstr ""
+
+#: inc/core/post-types.php:23
+msgid "All Elements"
+msgstr ""
+
+#: inc/core/post-types.php:24
+msgid "Search Elements"
+msgstr ""
+
+#: inc/core/post-types.php:25
+msgid "Parent Elements:"
+msgstr ""
+
+#: inc/core/post-types.php:26
+msgid "No elements found."
+msgstr ""
+
+#: inc/core/post-types.php:27
+msgid "No elements found in Trash."
+msgstr ""
+
+#: inc/core/post-types.php:28
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Element Cover Image"
+msgstr ""
+
+#: inc/core/post-types.php:29
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr ""
+
+#: inc/core/post-types.php:30
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in "
+"4.3"
+msgid "Remove cover image"
+msgstr ""
+
+#: inc/core/post-types.php:31
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in "
+"4.3"
+msgid "Use as cover image"
+msgstr ""
+
+#: inc/core/post-types.php:32
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Element archives"
+msgstr ""
+
+#: inc/core/post-types.php:33
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into element"
+msgstr ""
+
+#: inc/core/post-types.php:34
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this element"
+msgstr ""
+
+#: inc/core/post-types.php:35
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter elements list"
+msgstr ""
+
+#: inc/core/post-types.php:36
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in "
+"4.4"
+msgid "Elements list navigation"
+msgstr ""
+
+#: inc/core/post-types.php:37
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Elements list"
 msgstr ""
 
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:24
 msgid "Custom Items"
 msgstr ""
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:55
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:56
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:77
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:82
 msgid "View All"
 msgstr ""
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:133
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:135
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:128
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:132
 msgid "Add to Menu"
 msgstr ""
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:24
-msgid "Post Type Archives"
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:15
+msgid "Menus"
 msgstr ""
 
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:65
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:70
 msgid "No items."
 msgstr ""
 
-#: inc/legacy-menu-metabox/wpam-menu-item-types.php:99
-msgid "WP:AM"
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:24
+msgid "Post Type Archives"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

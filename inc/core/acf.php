@@ -45,7 +45,7 @@ function wpam_notice_acf_plugin_required(){
     $acf_link = get_admin_url() . $acf_search_url ;
 
     echo '<div id="message" class="error notice is-dismissible">
-    <p>'. __( 'Please install and activate <a href="'.$acf_link.'">Advanced Custom Fields</a> for using WP:AM plugin.' , 'wp-advanced-menu-demos').'</p>
+    <p>'. __( 'Please install and activate', 'wp-advanced-menu-demos') . ' ' . '<a href="'.$acf_link.'">Advanced Custom Fields</a>'. ' ' . __('for using WP:AM plugin.' , 'wp-advanced-menu-demos').'</p>
     <button type="button" class="notice-dismiss"><span class="screen-reader-text">'.__('Ignore this message.','wp-advanced-menu').'</span></button>
     </div>';
     

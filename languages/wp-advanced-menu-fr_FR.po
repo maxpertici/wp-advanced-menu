@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-01-09 17:12+0100\n"
-"PO-Revision-Date: 2020-01-09 17:12+0100\n"
+"POT-Creation-Date: 2020-08-16 11:54+0200\n"
+"PO-Revision-Date: 2020-08-16 11:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,89 +20,112 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/admin/nav_menu.php:31
+#: inc/admin/pages/nav_menu.php:31
 msgid "Save menu to see options."
 msgstr "Enregistrer le menu pour voir les options."
 
-#: inc/admin/wpam_settings.php:135 inc/admin/wpam_settings.php:179
-msgid "Themes"
-msgstr "Themes"
+#: inc/admin/pages/wpam_overview.php:28
+#: inc/core/acf-fields/acf-nav-menu-general-settings.php:49
+msgid "General"
+msgstr "Général"
 
-#: inc/admin/wpam_settings.php:137 inc/admin/wpam_settings.php:281
-msgid "Licence"
-msgstr "Licence"
+#: inc/admin/pages/wpam_overview.php:33
+msgid "Informations"
+msgstr "Informations"
 
-#: inc/admin/wpam_settings.php:152
-msgid "Settings Saved"
-msgstr "Réglages enregistrés"
-
-#: inc/admin/wpam_settings.php:164
-msgid "Please validate your licence key for using this plugin."
-msgstr "Merci de valider votre clé de licence pour utiliser ce plugin."
-
-#: inc/admin/wpam_settings.php:167
-msgid "You've forgot your licence key ?"
-msgstr "Vous avez perdu votre clé ?"
-
-#: inc/admin/wpam_settings.php:168
-msgid "Don't worry."
-msgstr "Pas de soucis."
-
-#: inc/admin/wpam_settings.php:169
-msgid "Follow this link."
-msgstr "Suivez ce lien."
-
-#: inc/admin/wpam_settings.php:217
-msgid "Included in WP:AM"
-msgstr "Inclus dans WP:AM"
-
-#: inc/admin/wpam_settings.php:237
-msgid "From plugins"
-msgstr "Fournis par les extensions"
-
-#: inc/admin/wpam_settings.php:258
-msgid "From themes"
-msgstr "Fournis par les themes."
-
-#: inc/admin/wpam_settings.php:289
-msgid "Licence key"
-msgstr "Clé de licence"
-
-#: inc/admin/wpam_settings.php:305
-msgid "Validate license key"
-msgstr "Valider la clé de licence"
-
-#: inc/admin/wpam_settings.php:322
+#: inc/admin/pages/wpam_overview.php:46
 #, php-format
 msgid ""
 "Hi ! It’s <a href=\"%s\" target=\"_blank\">@maxpertici</a>, the developer of "
-"WP Advanced Menu"
+"WP Advanced Menu."
 msgstr ""
-"Salut, c'est <a href=\"%s\" target=\"_blank\">@maxpertici</a>, le "
-"développeur de WP Advanced Menu"
+"Salut ! C’est <a href=\"%s\" target=\"_blank\">@maxpertici</a>, le "
+"développer de WP Advanced Menu."
 
-#: inc/admin/wpam_settings.php:327
-#, php-format
+#: inc/admin/pages/wpam_overview.php:53
 msgid ""
-"For feedback, requests for assistance or documentation : <a href=\"%s\" "
-"target=\"_blank\">everything is here</a>."
+"This plugin allows developers to create layouts and functionality for "
+"navigation menus. This plugin is still experimental at the moment."
 msgstr ""
-"Pour les feedbacks, les demandes d'assistance ou la documentation : <a href="
-"\"%s\" target=\"_blank\">tout est ici</a>."
+"Cette extension permet aux  développer de créer des mises en page et des "
+"fonctionnalités pour les menus de navigation. Cette extension est encore "
+"expérimentale pour le moment."
+
+#: inc/admin/pages/wpam_overview.php:63
+msgid "Documentation"
+msgstr "Documentation"
+
+#: inc/admin/pages/wpam_overview.php:69
+msgid "Draft documentation is available (and almost up to date)"
+msgstr "Un brouillon de documentation est disponible (et presque à jour)"
+
+#: inc/admin/pages/wpam_overview.php:75
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Go to documentation →</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Aller à la documentation →</a>"
+
+#: inc/admin/pages/wpam_overview.php:87
+msgid "Feedback"
+msgstr "Feedback"
+
+#: inc/admin/pages/wpam_overview.php:93
+msgid ""
+"All feedback is welcome. It helps me improve this plugin. Thanks for your "
+"help :)"
+msgstr ""
+"Tous les feedbaks sont bienvenus. Cela m’aide à améliorer cette extension. "
+"Merci pour votre aide  :)"
+
+#: inc/admin/pages/wpam_overview.php:99
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Write feedback →</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Écrire un feedback →</a>"
+
+#: inc/admin/pages/wpam_overview.php:115
+msgid "Themes"
+msgstr "Themes"
+
+#: inc/admin/pages/wpam_overview.php:162
+msgid "Included in WP:AM"
+msgstr "Inclus dans WP:AM"
+
+#: inc/admin/pages/wpam_overview.php:193
+msgid "From plugins"
+msgstr "Fournis par les extensions"
+
+#: inc/admin/pages/wpam_overview.php:225
+msgid "From themes"
+msgstr "Fournis par les themes."
+
+#: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
+#: inc/core/item-types.php:157
+msgid "Reusable Blocks"
+msgstr "Blocs réutilisables"
+
+#: inc/admin/wp_admin.php:34 inc/admin/wp_admin.php:35
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
+#: inc/legacy-menu-metabox/wpam-menu-item-types.php:100
+msgid "WP:AM"
+msgstr "WP:AM"
+
+#: inc/admin/wp_admin.php:47 inc/admin/wp_admin.php:48
+msgid "Overview"
+msgstr "Général"
+
+#: inc/admin/wp_admin.php:58 inc/admin/wp_admin.php:59
+#: inc/core/item-types.php:109
+msgid "Elements"
+msgstr "Éléments"
 
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:45
 msgid "Advanced settings"
 msgstr "Réglages avancés"
 
-#: inc/core/acf-fields/acf-nav-menu-general-settings.php:49
-msgid "General"
-msgstr "Général"
-
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:65
 msgid "Theme"
 msgstr "Theme"
 
-#: inc/core/acf-fields/acf-nav-menu-general-settings.php:88
+#: inc/core/acf-fields/acf-nav-menu-general-settings.php:87
 msgid "Override"
 msgstr "Override"
 
@@ -110,110 +133,294 @@ msgstr "Override"
 msgid "Options"
 msgstr "Options"
 
-#: inc/core/acf.php:200
+#: inc/core/acf.php:48
+msgid "Please install and activate"
+msgstr "Merci d’installer et d’activer"
+
+#: inc/core/acf.php:48
+msgid "for using WP:AM plugin."
+msgstr "Pour utiliser l’extension WP:AM."
+
+#: inc/core/acf.php:49
+msgid "Ignore this message."
+msgstr "Ignorer ce message."
+
+#: inc/core/acf.php:190
 msgid "Media queries"
 msgstr "Media queries"
 
-#: inc/core/item-types.php:38
-msgid "Item"
-msgstr "Élément"
-
 #: inc/core/item-types.php:43
-msgid "Item settings group"
-msgstr "Groupe de réglages d'élément"
-
-#: inc/core/item-types.php:49
-msgid "Submenu type"
-msgstr "Type de sous-menu"
-
-#: inc/core/item-types.php:61
-msgid "Default"
-msgstr "Par défaut"
-
-#: inc/core/item-types.php:62
-msgid "Columns"
-msgstr "Colonnes"
-
-#: inc/core/item-types.php:76
-msgid "Number of columns"
-msgstr "Nombre de colonnes"
-
-#: inc/core/item-types.php:97
-msgid "Two"
-msgstr "Deux"
-
-#: inc/core/item-types.php:98
-msgid "Three"
-msgstr "Trois"
-
-#: inc/core/item-types.php:99
-msgid "Four"
-msgstr "Quatre"
-
-#: inc/core/item-types.php:100
-msgid "Five"
-msgstr "Cinq"
-
-#: inc/core/item-types.php:101
-msgid "Six"
-msgstr "Six"
-
-#: inc/core/item-types.php:102
-msgid "Seven"
-msgstr "Sept"
-
-#: inc/core/item-types.php:103
-msgid "Eight"
-msgstr "Huit"
-
-#: inc/core/item-types.php:104
-msgid "Nine"
-msgstr "Neuf"
-
-#: inc/core/item-types.php:105
-msgid "Ten"
-msgstr "Dix"
-
-#: inc/core/item-types.php:139
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:70
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:85
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:110
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:119
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:124
 msgid "Image"
 msgstr "Image"
 
-#: inc/core/item-types.php:144
+#: inc/core/item-types.php:48
 msgid "Image settings group"
 msgstr "Groupe de réglages d’image"
 
-#: inc/core/item-types.php:151
+#: inc/core/item-types.php:55
 msgid "Image settings"
 msgstr "Réglages de l’image"
+
+#: inc/core/item-types.php:96
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
+msgid "Element"
+msgstr "Élément"
+
+#: inc/core/item-types.php:101
+msgid "Element settings group"
+msgstr "Groupe de réglages d’Élément"
+
+#: inc/core/item-types.php:145
+msgid "Block"
+msgstr "Bloc"
+
+#: inc/core/item-types.php:150
+msgid "Block settings group"
+msgstr "Groupe de réglages de Bloc"
+
+#: inc/core/item-types.php:163
+#, php-format
+msgid ""
+"Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href=\"post-"
+"new.php?post_type=wp_block\">%s</a> if empty."
+msgstr ""
+"Choisissez votre <a href=\"edit.php?post_type=wp_block\">%s</a> ou <a href="
+"\"post-new.php?post_type=wp_block\">%s</a> si vide."
+
+#: inc/core/item-types.php:164
+msgid "reusable block"
+msgstr "Bloc réutilisable"
+
+#: inc/core/item-types.php:165
+msgid "create one"
+msgstr "créez en un"
+
+#: inc/core/item-types.php:199
+msgid "Post Type Archive"
+msgstr "Archive de type de publication"
+
+#: inc/core/item-types.php:215
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/core/item-types.php:229
+msgid "Item"
+msgstr "Élément"
+
+#: inc/core/item-types.php:234
+msgid "Item settings group"
+msgstr "Groupe de réglages d'élément"
+
+#: inc/core/item-types.php:241
+msgid "Submenu type"
+msgstr "Type de sous-menu"
+
+#: inc/core/item-types.php:253
+msgid "Default"
+msgstr "Par défaut"
+
+#: inc/core/item-types.php:254
+msgid "Columns"
+msgstr "Colonnes"
+
+#: inc/core/item-types.php:268
+msgid "Number of columns"
+msgstr "Nombre de colonnes"
+
+#: inc/core/item-types.php:289
+msgid "Two"
+msgstr "Deux"
+
+#: inc/core/item-types.php:290
+msgid "Three"
+msgstr "Trois"
+
+#: inc/core/item-types.php:291
+msgid "Four"
+msgstr "Quatre"
+
+#: inc/core/item-types.php:292
+msgid "Five"
+msgstr "Cinq"
+
+#: inc/core/item-types.php:293
+msgid "Six"
+msgstr "Six"
+
+#: inc/core/item-types.php:294
+msgid "Seven"
+msgstr "Sept"
+
+#: inc/core/item-types.php:295
+msgid "Eight"
+msgstr "Huit"
+
+#: inc/core/item-types.php:296
+msgid "Nine"
+msgstr "Neuf"
+
+#: inc/core/item-types.php:297
+msgid "Ten"
+msgstr "Dix"
+
+#: inc/core/post-types.php:14
+msgctxt "Post type general name"
+msgid "Nav. elements"
+msgstr "Éléments de navigation"
+
+#: inc/core/post-types.php:15
+msgctxt "Post type singular name"
+msgid "Nav. element"
+msgstr "Élément de navigation"
+
+#: inc/core/post-types.php:16
+msgctxt "Admin Menu text"
+msgid "WP:AM"
+msgstr "WP:AM"
+
+#: inc/core/post-types.php:17
+msgctxt "Add New on Toolbar"
+msgid "Nav. element"
+msgstr "Élément de navigation"
+
+#: inc/core/post-types.php:18
+msgid "Add New"
+msgstr "Ajouter"
+
+#: inc/core/post-types.php:19
+msgid "Add New element"
+msgstr "Ajouter un élément"
+
+#: inc/core/post-types.php:20
+msgid "New element"
+msgstr "Nouvel élement"
+
+#: inc/core/post-types.php:21
+msgid "Edit Element"
+msgstr "Modifier l’élément"
+
+#: inc/core/post-types.php:22
+msgid "View Element"
+msgstr "Voir l’élément"
+
+#: inc/core/post-types.php:23
+msgid "All Elements"
+msgstr "Tous les éléments"
+
+#: inc/core/post-types.php:24
+msgid "Search Elements"
+msgstr "Rechercher des éléments"
+
+#: inc/core/post-types.php:25
+msgid "Parent Elements:"
+msgstr ""
+
+#: inc/core/post-types.php:26
+msgid "No elements found."
+msgstr "Pas d’éléments trouvés."
+
+#: inc/core/post-types.php:27
+msgid "No elements found in Trash."
+msgstr "Pas d‘éléments dans la corbeille."
+
+#: inc/core/post-types.php:28
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Element Cover Image"
+msgstr "Image à la une de l’élément"
+
+#: inc/core/post-types.php:29
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr "Définir une image à la une"
+
+#: inc/core/post-types.php:30
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
+msgid "Remove cover image"
+msgstr "Retirer l’image à la une"
+
+#: inc/core/post-types.php:31
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
+msgid "Use as cover image"
+msgstr "Utiliser comme image à la une"
+
+#: inc/core/post-types.php:32
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Element archives"
+msgstr "Archives d’éléments"
+
+#: inc/core/post-types.php:33
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into element"
+msgstr "Insérer dans l’élément"
+
+#: inc/core/post-types.php:34
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this element"
+msgstr "Téléverser dans cet élément"
+
+#: inc/core/post-types.php:35
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter elements list"
+msgstr "Filtrer la liste d’éléments"
+
+#: inc/core/post-types.php:36
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Elements list navigation"
+msgstr "Liste des éléments de navigtaion"
+
+#: inc/core/post-types.php:37
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Elements list"
+msgstr "Liste d’éléments"
 
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:24
 msgid "Custom Items"
 msgstr "Éléments personnalisés"
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:55
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:56
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:77
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:82
 msgid "View All"
 msgstr "Voir tout"
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:133
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:135
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:128
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:132
 msgid "Add to Menu"
 msgstr "Ajouter au menu"
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:24
-msgid "Post Type Archives"
-msgstr "Archives de types de publications"
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:15
+msgid "Menus"
+msgstr "Menus"
 
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:65
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:70
 msgid "No items."
 msgstr "Pas d’éléments."
 
-#: inc/legacy-menu-metabox/wpam-menu-item-types.php:99
-msgid "WP:AM"
-msgstr "WP:AM"
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:24
+msgid "Post Type Archives"
+msgstr "Archives de types de publications"
 
 #. Plugin Name of the plugin/theme
 msgid "WP Advanced Menu"
@@ -235,6 +442,59 @@ msgstr "Maxime Pertici"
 msgid "https://m.pertici.fr"
 msgstr "https://m.pertici.fr"
 
+#~ msgctxt "Post type singular name"
+#~ msgid "Nav element"
+#~ msgstr "Élément de navigation"
+
+#~ msgctxt "Add New on Toolbar"
+#~ msgid "Nav element"
+#~ msgstr "Élément de navigation"
+
+#~ msgctxt "Post type general name"
+#~ msgid "WP:AM"
+#~ msgstr "WP:AM"
+
+#~ msgid "Please install and activate <a href=\""
+#~ msgstr "Merci d’installer et d’activer"
+
+#~ msgid "Licence"
+#~ msgstr "Licence"
+
+#~ msgid "Settings Saved"
+#~ msgstr "Réglages enregistrés"
+
+#~ msgid "Please validate your licence key for using this plugin."
+#~ msgstr "Merci de valider votre clé de licence pour utiliser ce plugin."
+
+#~ msgid "You've forgot your licence key ?"
+#~ msgstr "Vous avez perdu votre clé ?"
+
+#~ msgid "Don't worry."
+#~ msgstr "Pas de soucis."
+
+#~ msgid "Follow this link."
+#~ msgstr "Suivez ce lien."
+
+#~ msgid "Licence key"
+#~ msgstr "Clé de licence"
+
+#~ msgid "Validate license key"
+#~ msgstr "Valider la clé de licence"
+
+#~ msgid ""
+#~ "Hi ! It’s <a href=\"%s\" target=\"_blank\">@maxpertici</a>, the developer "
+#~ "of WP Advanced Menu"
+#~ msgstr ""
+#~ "Salut, c'est <a href=\"%s\" target=\"_blank\">@maxpertici</a>, le "
+#~ "développeur de WP Advanced Menu"
+
+#~ msgid ""
+#~ "For feedback, requests for assistance or documentation : <a href=\"%s\" "
+#~ "target=\"_blank\">everything is here</a>."
+#~ msgstr ""
+#~ "Pour les feedbacks, les demandes d'assistance ou la documentation : <a "
+#~ "href=\"%s\" target=\"_blank\">tout est ici</a>."
+
 #~ msgid "Submenu settings"
 #~ msgstr "Réglages du sous-menu"
 
@@ -243,9 +503,6 @@ msgstr "https://m.pertici.fr"
 
 #~ msgid "Number"
 #~ msgstr "Nombre"
-
-#~ msgid "Post Type Archive"
-#~ msgstr "Archive de type de publication"
 
 #~ msgid "Save Settings"
 #~ msgstr "Enregistrer les réglages"

@@ -31,8 +31,9 @@ function wpam_admin_menu() {
 	
 	# First, the top level menu entry
 	add_menu_page(
-		'WP:AM', # Page title
-		'WP:AM', # Menu title
+		__('WP:AM','wp-advanced-menu'), # Page title
+		__('WP:AM','wp-advanced-menu'), # Menu title
+
 		'manage_options', # Capability
 		'wpam-admin', # Menu slug
 		'wpam_admin_render_overview',
@@ -42,8 +43,10 @@ function wpam_admin_menu() {
 	# Overview
 	add_submenu_page(
 		'wpam-admin', # Parent menu slug
-		'Overview',
-		'Overview',
+
+		__('Overview','wp-advanced-menu'),
+		__('Overview','wp-advanced-menu'),
+
 		'manage_options',
 		'wpam-admin', # Default subpage so menu slug is same as parent
 		'wpam_admin_render_overview'
@@ -52,8 +55,8 @@ function wpam_admin_menu() {
 	# CPT page
 	add_submenu_page(
 		'wpam-admin',
-		'Elements',
-		'Elements',
+		__('Elements','wp-advanced-menu'),
+		__('Elements','wp-advanced-menu'),
 		'manage_options',
 		'edit.php?post_type=wpam-element'
 	);

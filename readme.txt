@@ -18,6 +18,10 @@ Forget the walker and create powerful navigations with a real theme system.
 
 == Changelog ==
 
+= 1.2 =
+* Add reusable block item
+* Replace element item by content item
+
 = 1.1 =
 * FIX element <-> item translation support in nav-menu screen
 

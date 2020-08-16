@@ -2,7 +2,7 @@
 Contributors: maxpertici
 Donate link: 
 Tags: Navigation, Menu, Walker, Theme
-Requires at least: 5.2
+Requires at least: 5.0
 Tested up to: 5.5
 Stable tag: 1.0
 Requires PHP: 7.0

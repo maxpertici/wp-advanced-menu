@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-08-16 22:17+0200\n"
-"PO-Revision-Date: 2020-08-16 22:19+0200\n"
+"POT-Creation-Date: 2020-08-16 22:27+0200\n"
+"PO-Revision-Date: 2020-08-16 22:28+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -98,7 +98,7 @@ msgid "From themes"
 msgstr "Fournis par les themes."
 
 #: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
-#: inc/core/item-types.php:163
+#: inc/core/item-types.php:170
 msgid "Reusable Blocks"
 msgstr "Blocs réutilisables"
 
@@ -116,7 +116,7 @@ msgstr "Général"
 #: inc/admin/wp_admin.php:58 inc/admin/wp_admin.php:59
 #: inc/core/item-types.php:113
 msgid "Contents"
-msgstr ""
+msgstr "Contenus"
 
 #: inc/core/acf-fields/acf-nav-menu-general-settings.php:45
 msgid "Advanced settings"
@@ -175,17 +175,34 @@ msgstr "Contenus"
 msgid "Content settings group"
 msgstr "Groupe de réglages du contenu"
 
-#: inc/core/item-types.php:149
+#: inc/core/item-types.php:120
+#, php-format
+msgid ""
+"Choose your <a href=\"edit.php?post_type=wpam-content\">%s</a> or <a href="
+"\"post-new.php?post_type=wpam-content\">%s</a> if empty."
+msgstr ""
+"Choisissez votre <a href=\"edit.php?post_type=wpam-content\">%s</a> ou <a "
+"href=\"post-new.php?post_type=wpam-content\">%s</a> si vide."
+
+#: inc/core/item-types.php:121
+msgid "content"
+msgstr "contenu"
+
+#: inc/core/item-types.php:122 inc/core/item-types.php:178
+msgid "create one"
+msgstr "créez en un"
+
+#: inc/core/item-types.php:156
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
 msgid "Block"
 msgstr "Bloc"
 
-#: inc/core/item-types.php:156
+#: inc/core/item-types.php:163
 msgid "Block settings group"
 msgstr "Groupe de réglages de Bloc"
 
-#: inc/core/item-types.php:169
+#: inc/core/item-types.php:176
 #, php-format
 msgid ""
 "Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href=\"post-"
@@ -194,79 +211,75 @@ msgstr ""
 "Choisissez votre <a href=\"edit.php?post_type=wp_block\">%s</a> ou <a href="
 "\"post-new.php?post_type=wp_block\">%s</a> si vide."
 
-#: inc/core/item-types.php:170
+#: inc/core/item-types.php:177
 msgid "reusable block"
 msgstr "Bloc réutilisable"
 
-#: inc/core/item-types.php:171
-msgid "create one"
-msgstr "créez en un"
-
-#: inc/core/item-types.php:205
+#: inc/core/item-types.php:212
 msgid "Post Type Archive"
 msgstr "Archive de type de publication"
 
-#: inc/core/item-types.php:223
+#: inc/core/item-types.php:230
 msgid "Menu"
 msgstr "Menu"
 
-#: inc/core/item-types.php:239
+#: inc/core/item-types.php:246
 msgid "Item"
 msgstr "Élément"
 
-#: inc/core/item-types.php:246
+#: inc/core/item-types.php:253
 msgid "Item settings group"
 msgstr "Groupe de réglages d'élément"
 
-#: inc/core/item-types.php:253
+#: inc/core/item-types.php:260
 msgid "Submenu type"
 msgstr "Type de sous-menu"
 
-#: inc/core/item-types.php:265
+#: inc/core/item-types.php:272
 msgid "Default"
 msgstr "Par défaut"
 
-#: inc/core/item-types.php:266
+#: inc/core/item-types.php:273
 msgid "Columns"
 msgstr "Colonnes"
 
-#: inc/core/item-types.php:280
+#: inc/core/item-types.php:287
 msgid "Number of columns"
 msgstr "Nombre de colonnes"
 
-#: inc/core/item-types.php:301
+#: inc/core/item-types.php:308
 msgid "Two"
 msgstr "Deux"
 
-#: inc/core/item-types.php:302
+#: inc/core/item-types.php:309
 msgid "Three"
 msgstr "Trois"
 
-#: inc/core/item-types.php:303
+#: inc/core/item-types.php:310
 msgid "Four"
 msgstr "Quatre"
 
-#: inc/core/item-types.php:304
+#: inc/core/item-types.php:311
 msgid "Five"
 msgstr "Cinq"
 
-#: inc/core/item-types.php:305
+#: inc/core/item-types.php:312
 msgid "Six"
 msgstr "Six"
 
-#: inc/core/item-types.php:306
+#: inc/core/item-types.php:313
 msgid "Seven"
 msgstr "Sept"
 
-#: inc/core/item-types.php:307
+#: inc/core/item-types.php:314
 msgid "Eight"
 msgstr "Huit"
 
-#: inc/core/item-types.php:308
+#: inc/core/item-types.php:315
 msgid "Nine"
 msgstr "Neuf"
 
-#: inc/core/item-types.php:309
+#: inc/core/item-types.php:316
 msgid "Ten"
 msgstr "Dix"
 

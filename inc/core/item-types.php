@@ -90,7 +90,7 @@ $wpam_custom_menu_item_spec = array(
 
 
     /**
-     *  Element
+     *  Content
      */
     
     'content' => array(
@@ -114,7 +114,14 @@ $wpam_custom_menu_item_spec = array(
                 'name' => 'wpam_nav_item_content_selector',
 
                 'type' => 'post_object',
-                'instructions' => '',
+                
+                'instructions' => 
+                    sprintf(
+                        __( 'Choose your <a href="edit.php?post_type=wpam-content">%s</a> or <a href="post-new.php?post_type=wpam-content">%s</a> if empty.', 'wp-advanced-menu' ) ,
+                        __( 'content', 'wp-advanced-menu' ),
+                        __( 'create one', 'wp-advanced-menu' )
+                    ),
+
                 'required' => 0,
                 'conditional_logic' => 0,
 

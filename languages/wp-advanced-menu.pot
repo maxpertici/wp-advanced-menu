@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-08-16 22:17+0200\n"
+"POT-Creation-Date: 2020-08-16 22:26+0200\n"
 "PO-Revision-Date: 2018-06-01 20:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -94,7 +94,7 @@ msgid "From themes"
 msgstr ""
 
 #: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
-#: inc/core/item-types.php:163
+#: inc/core/item-types.php:170
 msgid "Reusable Blocks"
 msgstr ""
 
@@ -171,96 +171,107 @@ msgstr ""
 msgid "Content settings group"
 msgstr ""
 
-#: inc/core/item-types.php:149
+#: inc/core/item-types.php:120
+#, php-format
+msgid ""
+"Choose your <a href=\"edit.php?post_type=wpam-content\">%s</a> or <a href="
+"\"post-new.php?post_type=wpam-content\">%s</a> if empty."
+msgstr ""
+
+#: inc/core/item-types.php:121
+msgid "content"
+msgstr ""
+
+#: inc/core/item-types.php:122 inc/core/item-types.php:178
+msgid "create one"
+msgstr ""
+
+#: inc/core/item-types.php:156
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
 msgid "Block"
 msgstr ""
 
-#: inc/core/item-types.php:156
+#: inc/core/item-types.php:163
 msgid "Block settings group"
 msgstr ""
 
-#: inc/core/item-types.php:169
+#: inc/core/item-types.php:176
 #, php-format
 msgid ""
 "Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href="
 "\"post-new.php?post_type=wp_block\">%s</a> if empty."
 msgstr ""
 
-#: inc/core/item-types.php:170
+#: inc/core/item-types.php:177
 msgid "reusable block"
 msgstr ""
 
-#: inc/core/item-types.php:171
-msgid "create one"
-msgstr ""
-
-#: inc/core/item-types.php:205
+#: inc/core/item-types.php:212
 msgid "Post Type Archive"
 msgstr ""
 
-#: inc/core/item-types.php:223
+#: inc/core/item-types.php:230
 msgid "Menu"
 msgstr ""
 
-#: inc/core/item-types.php:239
+#: inc/core/item-types.php:246
 msgid "Item"
 msgstr ""
 
-#: inc/core/item-types.php:246
+#: inc/core/item-types.php:253
 msgid "Item settings group"
 msgstr ""
 
-#: inc/core/item-types.php:253
+#: inc/core/item-types.php:260
 msgid "Submenu type"
 msgstr ""
 
-#: inc/core/item-types.php:265
+#: inc/core/item-types.php:272
 msgid "Default"
 msgstr ""
 
-#: inc/core/item-types.php:266
+#: inc/core/item-types.php:273
 msgid "Columns"
 msgstr ""
 
-#: inc/core/item-types.php:280
+#: inc/core/item-types.php:287
 msgid "Number of columns"
 msgstr ""
 
-#: inc/core/item-types.php:301
+#: inc/core/item-types.php:308
 msgid "Two"
 msgstr ""
 
-#: inc/core/item-types.php:302
+#: inc/core/item-types.php:309
 msgid "Three"
 msgstr ""
 
-#: inc/core/item-types.php:303
+#: inc/core/item-types.php:310
 msgid "Four"
 msgstr ""
 
-#: inc/core/item-types.php:304
+#: inc/core/item-types.php:311
 msgid "Five"
 msgstr ""
 
-#: inc/core/item-types.php:305
+#: inc/core/item-types.php:312
 msgid "Six"
 msgstr ""
 
-#: inc/core/item-types.php:306
+#: inc/core/item-types.php:313
 msgid "Seven"
 msgstr ""
 
-#: inc/core/item-types.php:307
+#: inc/core/item-types.php:314
 msgid "Eight"
 msgstr ""
 
-#: inc/core/item-types.php:308
+#: inc/core/item-types.php:315
 msgid "Nine"
 msgstr ""
 
-#: inc/core/item-types.php:309
+#: inc/core/item-types.php:316
 msgid "Ten"
 msgstr ""
 

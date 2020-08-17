@@ -3,7 +3,7 @@
 Plugin Name:  WP Advanced Menu
 Plugin URI:   https://wpam.io
 Description:  Great menu to launch
-Version:      1.2
+Version:      1.3
 Author:       Maxime Pertici
 Author URI:   https://m.pertici.fr
 Contributors:

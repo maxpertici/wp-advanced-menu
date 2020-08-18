@@ -18,8 +18,8 @@ function wpam_admin_render_overview(){
         <div class="wpam-admin-page-header-banner">
         <?php
             // WP:AM logo
-            echo esc_html( '<img class="wpam-admin-page-header-logo" src="' . plugins_url( '../img/wpam-logo.png', __FILE__ )
-            . '" title="' . esc_html( get_admin_page_title() ) . '" > ' );
+            echo '<img class="wpam-admin-page-header-logo" src="' . plugins_url( '../img/wpam-logo.png', __FILE__ )
+            . '" title="' . esc_html( get_admin_page_title() ) . '" > ';
 
             ?>
         </div>
@@ -35,15 +35,15 @@ function wpam_admin_render_overview(){
                 <div class="wpam-admin-page-info-col-content">
                 <?php
 
-                echo esc_html( '<img class="wpam-admin-page-info__brand-avatar" height="60" width="60" src="' . plugins_url( '../img/maxpertici-avatar-200x200.jpg', __FILE__ )
-                . '" > ' );
+                echo '<img class="wpam-admin-page-info__brand-avatar" height="60" width="60" src="' . plugins_url( '../img/maxpertici-avatar-200x200.jpg', __FILE__ )
+                . '" > ';
                 
-                echo esc_html( '<div class="wpam-admin-page-info__brand-text">' .
+                echo '<div class="wpam-admin-page-info__brand-text">' .
 
                     '<p class="wpam-admin-page-info__brand-text__title">' .
                     
                     sprintf( 
-                        esc_html__( 'Hi ! It’s <a href="%s" target="_blank">@maxpertici</a>, the developer of WP Advanced Menu.' , 'wp-advanced-menu' ), 
+                        __( 'Hi ! It’s <a href="%s" target="_blank">@maxpertici</a>, the developer of WP Advanced Menu.' , 'wp-advanced-menu' ), 
                         esc_url( 'https://twitter.com/maxpertici' ) 
                     ) .
                     
@@ -54,7 +54,7 @@ function wpam_admin_render_overview(){
                     
                     '</p>' .
                     
-                    '</div>' ); 
+                    '</div>' ; 
 
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->
@@ -65,7 +65,7 @@ function wpam_admin_render_overview(){
                 <div class="wpam-admin-page-info-col-content">
                 <?php 
 
-                echo esc_html(
+                echo 
 
                 '<p>' . esc_html__( 'Draft documentation is available (and almost up to date)', 'wp-advanced-menu' ) . '</p>' . 
                     
@@ -73,12 +73,12 @@ function wpam_admin_render_overview(){
 
                 '<li>' .
                 sprintf( 
-                    esc_html__( '<a href="%s" target="_blank">Go to documentation →</a>', 'wp-advanced-menu' ), 
+                    __( '<a href="%s" target="_blank">Go to documentation →</a>', 'wp-advanced-menu' ), 
                     esc_url( 'https://maxpertici.slite.com/p/note/SyHKacXjEJffPmco7QZPaN' ) 
                 ) .
                 '</li>' .
 
-                '</ul>' );
+                '</ul>' ;
 
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->
@@ -89,7 +89,7 @@ function wpam_admin_render_overview(){
                 <div class="wpam-admin-page-info-col-content">
                 <?php 
 
-                echo esc_html(
+                echo 
 
                 '<p>' . __( 'All feedback is welcome. It helps me improve this plugin. Thanks for your help :)', 'wp-advanced-menu' ) . '</p>' . 
                     
@@ -97,12 +97,12 @@ function wpam_admin_render_overview(){
 
                 '<li>' .
                 sprintf( 
-                    esc_html__( '<a href="%s" target="_blank">Write feedback →</a>', 'wp-advanced-menu' ), 
+                    __( '<a href="%s" target="_blank">Write feedback →</a>', 'wp-advanced-menu' ), 
                     esc_url( 'https://docs.google.com/forms/d/e/1FAIpQLSdPIe_CdK81Cjc-croXpUziCdnskjIK4YOERoH53LyGOw2WwQ/viewform' ) 
                 ) .
                 '</li>' .
 
-                '</ul>' );
+                '</ul>' ;
 
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->

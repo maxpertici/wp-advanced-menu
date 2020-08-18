@@ -98,7 +98,7 @@ function wpam_setup_nav_menu_item( $menu_item ){
         if( $is_wpam_item ){
             
             // Label
-            $label =  __( 'WP:AM' , 'wp-advanced-menu') . ' — ' . $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ];
+            $label =  esc_html__( 'WP:AM' , 'wp-advanced-menu') . ' — ' . $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ];
 
             if( $custom_item_type === 'post_type_archive' ){
                 $menu_item->object  = $custom_item_data['menu-item-object'];

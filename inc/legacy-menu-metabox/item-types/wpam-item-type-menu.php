@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) or	die();
  */
 function wpam_add_item_type_menu_metabox( $object ) {
 
-	add_meta_box( 'wpam-item-type-menu-metabox', __( 'Menus', 'wp-advanced-menu' ), 'wpam_item_type_menu_metabox', 'nav-menus', 'side', 'low' );
+	add_meta_box( 'wpam-item-type-menu-metabox', esc_html__( 'Menus', 'wp-advanced-menu' ), 'wpam_item_type_menu_metabox', 'nav-menus', 'side', 'low' );
 
 	return $object;
 }
@@ -62,7 +62,7 @@ function wpam_item_type_menu_metabox(){
 
     // Inform user no CPTs available to be shown.
 	if ( empty( $menus ) ) {
-		echo '<p>' . __( 'No items.' ) . '</p>';
+		echo '<p>' . esc_html__( 'No items.' ) . '</p>';
 		return;
 	}
 	
@@ -74,7 +74,7 @@ function wpam_item_type_menu_metabox(){
 		<ul id="wpam-item-type-menu-tabs" class="wpam-item-type-menu-tabs add-menu-item-tabs">
 			<li <?php echo ( 'all' == $current_tab ? ' class="tabs"' : '' ); ?>>
 				<a class="nav-tab-link" data-type="tabs-panel-wpam-item-type-menu-all" href="<?php if ( $nav_menu_selected_id ) echo esc_url( add_query_arg( 'wpam-item-type-menu-tab', 'all', remove_query_arg( $removed_args ) ) ); ?>#tabs-panel-wpam-item-type-menu-all">
-					<?php _e( 'View All' ); ?>
+					<?php echo esc_html__( 'View All' ); ?>
 				</a>
 			</li><!-- /.tabs -->
 
@@ -102,16 +102,16 @@ function wpam_item_type_menu_metabox(){
                 ?>
                 <li>
                     <label class="menu-item-title">
-                        <input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-label]" value="0"> <?php echo $item->name; ?>
+                        <input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-label]" value="0"> <?php echo esc_html__( $item->name ); ?>
                     </label>
 
-                    <input type="hidden" class="menu-item-type" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-type]" value="custom">
-                    <input type="hidden" class="menu-item-object" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-object]" value="<?php echo esc_attr( $item->name ); ?>">
+                    <input type="hidden" class="menu-item-type" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-type]" value="custom">
+                    <input type="hidden" class="menu-item-object" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-object]" value="<?php echo esc_attr( $item->name ); ?>">
 
-                    <input type="hidden" class="menu-item-title" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-title]" value="<?php echo $item->name; ?>">
-                    <input type="hidden" class="menu-item-url" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-url]" value="<?php echo $url ; ?>">
+                    <input type="hidden" class="menu-item-title" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-title]" value="<?php echo esc_attr( $item->name ); ?>">
+                    <input type="hidden" class="menu-item-url" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-url]" value="<?php echo esc_url( $url ) ; ?>">
 
-                    <input type="hidden" class="menu-item-url" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-data]" value="<?php echo $url ; ?>">
+                    <input type="hidden" class="menu-item-url" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-data]" value="<?php echo esc_url( $url ) ; ?>">
 
                 </li>
                 <?php

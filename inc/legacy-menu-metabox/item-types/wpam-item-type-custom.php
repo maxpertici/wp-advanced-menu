@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or	die();
  */
 function wpam_add_item_type_custom_metabox( $object ) {
 
-	add_meta_box( 'wpam-item-type-custom-metabox', __( 'Custom Items', 'wp-advanced-menu' ), 'wpam_item_type_custom_metabox', 'nav-menus', 'side', 'low' );
+	add_meta_box( 'wpam-item-type-custom-metabox', esc_html__( 'Custom Items', 'wp-advanced-menu' ), 'wpam_item_type_custom_metabox', 'nav-menus', 'side', 'low' );
 
 	return $object;
 }
@@ -53,7 +53,7 @@ function wpam_item_type_custom_metabox(){
 		<ul id="wpam-item-type-custom-tabs" class="wpam-item-type-custom-tabs add-menu-item-tabs">
 			<li <?php echo ( 'all' == $current_tab ? ' class="tabs"' : '' ); ?>>
 				<a class="nav-tab-link" data-type="tabs-panel-wpam-item-type-custom-all" href="<?php if ( $nav_menu_selected_id ) echo esc_url( add_query_arg( 'wpam-item-type-custom-tab', 'all', remove_query_arg( $removed_args ) ) ); ?>#tabs-panel-wpam-item-type-custom-all">
-					<?php _e( 'View All' ); ?>
+					<?php echo esc_html__( 'View All' ); ?>
 				</a>
 			</li><!-- /.tabs -->
 
@@ -76,7 +76,7 @@ function wpam_item_type_custom_metabox(){
 
 			$wpam_custom_item_tag = '#wpam_wpblock' ;
 			$menu_item_data = array(
-				'menu-item-title'  => __( 'WP:AM', 'wp-advanced-menu' )
+				'menu-item-title'  => esc_html__( 'WP:AM', 'wp-advanced-menu' )
 				,'menu-item-url'    => $wpam_custom_item_tag
 				);
 
@@ -85,14 +85,14 @@ function wpam_item_type_custom_metabox(){
 			?>
 			<li>
 				<label class="menu-item-title">
-					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-label]" value="0"> <?php echo __( 'Block', 'wp-advanced-menu' ) ; ?>
+					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-label]" value="0"> <?php echo esc_html__( 'Block', 'wp-advanced-menu' ) ; ?>
 				</label>
 
-				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-type]" value="custom">
-				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-object]" value="custom">
-				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-title]" value="<?php echo __( 'Block', 'wp-advanced-menu' ) ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-url]" value="<?php echo $url ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-data]" value="<?php echo $url ; ?>">
+				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-type]" value="custom">
+				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-object]" value="custom">
+				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-title]" value="<?php echo esc_attr__( 'Block', 'wp-advanced-menu' ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-url]" value="<?php echo esc_url( $url ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-data]" value="<?php echo esc_url( $url ) ; ?>">
 				
 			</li>
 			<?php
@@ -107,7 +107,7 @@ function wpam_item_type_custom_metabox(){
 
 			$wpam_custom_item_tag = '#wpam_content' ;
 			$menu_item_data = array(
-				'menu-item-title'  => __( 'WP:AM', 'wp-advanced-menu' )
+				'menu-item-title'  => esc_html__( 'WP:AM', 'wp-advanced-menu' )
 				,'menu-item-url'    => $wpam_custom_item_tag
 				);
 
@@ -116,14 +116,14 @@ function wpam_item_type_custom_metabox(){
 			?>
 			<li>
 				<label class="menu-item-title">
-					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-label]" value="0"> <?php echo __( 'Content', 'wp-advanced-menu' ) ; ?>
+					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-label]" value="0"> <?php echo esc_html__( 'Content', 'wp-advanced-menu' ) ; ?>
 				</label>
 
-				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-type]" value="custom">
-				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-object]" value="custom">
-				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-title]" value="<?php echo __( 'Content', 'wp-advanced-menu' ) ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-url]" value="<?php echo $url ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-data]" value="<?php echo $url ; ?>">
+				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-type]" value="custom">
+				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-object]" value="custom">
+				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-title]" value="<?php echo esc_attr__( 'Content', 'wp-advanced-menu' ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-url]" value="<?php echo esc_url( $url ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-data]" value="<?php echo esc_url( $url ) ; ?>">
 				
 			</li>
 			<?php
@@ -138,7 +138,7 @@ function wpam_item_type_custom_metabox(){
 			
 			$wpam_custom_item_tag = '#wpam_image' ;
 			$menu_item_data = array(
-				'menu-item-title'  => __( 'Image', 'wp-advanced-menu' )
+				'menu-item-title'  => esc_html__( 'Image', 'wp-advanced-menu' )
 				,'menu-item-url'    => $wpam_custom_item_tag
 				);
 			
@@ -147,14 +147,14 @@ function wpam_item_type_custom_metabox(){
 			?>
 			<li>
 				<label class="menu-item-title">
-					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-label]" value="0"> <?php echo __( 'Image', 'wp-advanced-menu' ) ; ?>
+					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-label]" value="0"> <?php echo esc_html__( 'Image', 'wp-advanced-menu' ) ; ?>
 				</label>
 
-				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-type]" value="custom">
-				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-object]" value="custom">
-				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-title]" value="<?php echo __( 'Image', 'wp-advanced-menu' ) ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-url]" value="<?php echo $url ; ?>">
-				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo $_nav_menu_placeholder ?>][menu-item-data]" value="<?php echo $url ; ?>">
+				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-type]" value="custom">
+				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-object]" value="custom">
+				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-title]" value="<?php echo esc_attr__( 'Image', 'wp-advanced-menu' ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-url]" value="<?php echo escl_url( $url ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ); ?>][menu-item-data]" value="<?php echo esc_url( $url ) ; ?>">
 			</li>
 
 			</ul>

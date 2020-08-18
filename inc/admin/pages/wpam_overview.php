@@ -18,32 +18,32 @@ function wpam_admin_render_overview(){
         <div class="wpam-admin-page-header-banner">
         <?php
             // WP:AM logo
-            echo '<img class="wpam-admin-page-header-logo" src="' . plugins_url( '../img/wpam-logo.png', __FILE__ )
-            . '" title="' . esc_html( get_admin_page_title() ) . '" > ';
+            echo esc_html( '<img class="wpam-admin-page-header-logo" src="' . plugins_url( '../img/wpam-logo.png', __FILE__ )
+            . '" title="' . esc_html( get_admin_page_title() ) . '" > ' );
 
             ?>
         </div>
         
         <div class="wpam-admin-page-section wpam-admin-page-section-general">
-            <h2 class="wpam-admin-page-section-title"><?php echo __( 'General' , 'wp-advanced-menu');?></h2>
+            <h2 class="wpam-admin-page-section-title"><?php echo esc_html__( 'General' , 'wp-advanced-menu');?></h2>
             <div class="wpam-admin-page-info-list">
             
             <div class="wpam-admin-page-section-content-col  wpam-admin-col-size-4 wpam-admin-page-section-content-user-help">
                 
-                <h3 class="wpam-admin-page-info-col-title"><?php echo __( 'Informations' , 'wp-advanced-menu');?></h3>
+                <h3 class="wpam-admin-page-info-col-title"><?php echo esc_html__( 'Informations' , 'wp-advanced-menu');?></h3>
                 
                 <div class="wpam-admin-page-info-col-content">
                 <?php
 
-                echo '<img class="wpam-admin-page-info__brand-avatar" height="60" width="60" src="' . plugins_url( '../img/maxpertici-avatar-200x200.jpg', __FILE__ )
-                . '" > ';
+                echo esc_html( '<img class="wpam-admin-page-info__brand-avatar" height="60" width="60" src="' . plugins_url( '../img/maxpertici-avatar-200x200.jpg', __FILE__ )
+                . '" > ' );
                 
-                echo '<div class="wpam-admin-page-info__brand-text">' .
+                echo esc_html( '<div class="wpam-admin-page-info__brand-text">' .
 
                     '<p class="wpam-admin-page-info__brand-text__title">' .
                     
                     sprintf( 
-                        __( 'Hi ! It’s <a href="%s" target="_blank">@maxpertici</a>, the developer of WP Advanced Menu.' , 'wp-advanced-menu' ), 
+                        esc_html__( 'Hi ! It’s <a href="%s" target="_blank">@maxpertici</a>, the developer of WP Advanced Menu.' , 'wp-advanced-menu' ), 
                         esc_url( 'https://twitter.com/maxpertici' ) 
                     ) .
                     
@@ -54,41 +54,42 @@ function wpam_admin_render_overview(){
                     
                     '</p>' .
                     
-                    '</div>' ; 
+                    '</div>' ); 
+
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->
             </div><!-- /. wpam-admin-page-section-content-user-help -->
 
             <div class="wpam-admin-page-section-content-col wpam-admin-col-size-4">
-                <h3 class="wpam-admin-page-info-col-title"><?php echo __( 'Documentation' , 'wp-advanced-menu');?></h3>
+                <h3 class="wpam-admin-page-info-col-title"><?php echo esc_html__( 'Documentation' , 'wp-advanced-menu');?></h3>
                 <div class="wpam-admin-page-info-col-content">
                 <?php 
 
-                echo
+                echo esc_html(
 
-                '<p>' . __( 'Draft documentation is available (and almost up to date)', 'wp-advanced-menu' ) . '</p>' . 
+                '<p>' . esc_html__( 'Draft documentation is available (and almost up to date)', 'wp-advanced-menu' ) . '</p>' . 
                     
                 '<ul>' .
 
                 '<li>' .
                 sprintf( 
-                    __( '<a href="%s" target="_blank">Go to documentation →</a>', 'wp-advanced-menu' ), 
+                    esc_html__( '<a href="%s" target="_blank">Go to documentation →</a>', 'wp-advanced-menu' ), 
                     esc_url( 'https://maxpertici.slite.com/p/note/SyHKacXjEJffPmco7QZPaN' ) 
                 ) .
                 '</li>' .
 
-                '</ul>' ;
+                '</ul>' );
 
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->
             </div><!-- /.wpam-admin-page-section-content-col -->
 
             <div class="wpam-admin-page-section-content-col wpam-admin-col-size-4">
-                <h3 class="wpam-admin-page-info-col-title"><?php echo __( 'Feedback' , 'wp-advanced-menu');?></h3>
+                <h3 class="wpam-admin-page-info-col-title"><?php echo esc_html__( 'Feedback' , 'wp-advanced-menu');?></h3>
                 <div class="wpam-admin-page-info-col-content">
                 <?php 
 
-                echo
+                echo esc_html(
 
                 '<p>' . __( 'All feedback is welcome. It helps me improve this plugin. Thanks for your help :)', 'wp-advanced-menu' ) . '</p>' . 
                     
@@ -96,12 +97,12 @@ function wpam_admin_render_overview(){
 
                 '<li>' .
                 sprintf( 
-                    __( '<a href="%s" target="_blank">Write feedback →</a>', 'wp-advanced-menu' ), 
+                    esc_html__( '<a href="%s" target="_blank">Write feedback →</a>', 'wp-advanced-menu' ), 
                     esc_url( 'https://docs.google.com/forms/d/e/1FAIpQLSdPIe_CdK81Cjc-croXpUziCdnskjIK4YOERoH53LyGOw2WwQ/viewform' ) 
                 ) .
                 '</li>' .
 
-                '</ul>' ;
+                '</ul>' );
 
                 ?>
                 </div><!-- /.wpam-admin-page-info-col-content -->
@@ -112,7 +113,7 @@ function wpam_admin_render_overview(){
 
         <div class="wpam-admin-page-section">
 
-            <h2 class="wpam-admin-page-section-title"><?php echo __( 'Themes' , 'wp-advanced-menu');?></h2>
+            <h2 class="wpam-admin-page-section-title"><?php echo esc_html__( 'Themes' , 'wp-advanced-menu');?></h2>
             <?php
 
             $wpam_thems_bd = get_option( WPAM_THEMES_LIST_SLUG ) ;
@@ -159,7 +160,7 @@ function wpam_admin_render_overview(){
             if( $wpam_themes_buildin ){
             ?>
                 <div class="wpam-admin-page-section-content-themes">
-                    <h3 class="wpam-admin-page-themes-category-title"><?php echo __( 'Included in WP:AM' , 'wp-advanced-menu');?></h3>
+                    <h3 class="wpam-admin-page-themes-category-title"><?php echo esc_html__( 'Included in WP:AM' , 'wp-advanced-menu');?></h3>
 
                     <div class="wpam-admin-page-themes-list">
                     <?php
@@ -190,7 +191,7 @@ function wpam_admin_render_overview(){
             if( $wpam_themes_plugin ){
             ?>
                 <div class="wpam-admin-page-section-content-themes">
-                    <h3 class="wpam-admin-page-themes-category-title"><?php echo __( 'From plugins' , 'wp-advanced-menu');?></h3>
+                    <h3 class="wpam-admin-page-themes-category-title"><?php echo esc_html__( 'From plugins' , 'wp-advanced-menu');?></h3>
 
                     <div class="wpam-admin-page-themes-list">
                     <?php
@@ -222,7 +223,7 @@ function wpam_admin_render_overview(){
                 ?>
                     <div class="wpam-admin-page-section-content-themes">
 
-                    <h3 class="wpam-admin-page-themes-category-title"><?php echo __( 'From themes' , 'wp-advanced-menu');?></h3>
+                    <h3 class="wpam-admin-page-themes-category-title"><?php echo esc_html__( 'From themes' , 'wp-advanced-menu');?></h3>
                     <div class="wpam-admin-page-themes-list">
                     <?php
                     foreach( $wpam_themes_theme as $theme ){

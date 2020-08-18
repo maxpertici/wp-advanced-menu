@@ -28,7 +28,7 @@ function wpam_nav_menu_enqueue_scripts( $hook ){
 
     wp_enqueue_script( 'wpam_nav_menu_script' );
     wp_localize_script('wpam_nav_menu_script' , 'wpam_nav_menu_js_vars', array(
-        'theme_notice'           => __('Save menu to see options.', 'wp-advanced-menu'),
+        'theme_notice'           => esc_html__('Save menu to see options.', 'wp-advanced-menu'),
         'custom_menu_item_spec'  => $wpam_custom_menu_item_spec,
         'nav_item_fields_keys'   => $wpam_nav_item_fields_keys
         )

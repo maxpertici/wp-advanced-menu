@@ -1,20 +1,3 @@
 jQuery(document).ready(function($){
 
-    /**
-     * 
-     * 
-     * 
-     * 
-     * 
-     */
-
-
-
-    /**
-     * 
-     * 
-     * 
-     * 
-     * 
-     */
 });

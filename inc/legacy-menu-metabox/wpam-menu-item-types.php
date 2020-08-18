@@ -98,17 +98,17 @@ function wpam_setup_nav_menu_item( $menu_item ){
         if( $is_wpam_item ){
             
             // Label
-            $label =  esc_html__( 'WP:AM' , 'wp-advanced-menu') . ' — ' . $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ];
+            $label =  esc_html( __( 'WP:AM' , 'wp-advanced-menu') . ' — ' . $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ] );
 
             if( $custom_item_type === 'post_type_archive' ){
                 $menu_item->object  = $custom_item_data['menu-item-object'];
                 $menu_item->type    = 'post_type_archive';
 
-                $label =  $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ];
+                $label =  esc_html( $wpam_custom_menu_item_spec[ $custom_item_type ][ 'label' ] );
             }
 
-            $menu_item->type_label = $label;
-            $menu_item->url = $custom_item_data['menu-item-url'] ;
+            $menu_item->type_label = esc_html( $label );
+            $menu_item->url = esc_url( $custom_item_data['menu-item-url'] );
         }
 
 

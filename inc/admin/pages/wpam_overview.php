@@ -167,7 +167,7 @@ function wpam_admin_render_overview(){
                     foreach( $wpam_themes_buildin as $theme ){
                         
                         ob_start();
-                        include( WPAM_ADMIN_PATH . 'views/theme-resume.php');
+                        include( WPAM_ADMIN_PATH . 'template/theme-resume.php');
                         $buildin_theme_output = ob_get_contents();
                         ob_end_clean();
                         echo  $buildin_theme_output ;
@@ -198,7 +198,7 @@ function wpam_admin_render_overview(){
                     foreach( $wpam_themes_plugin as $theme ){
                         
                         ob_start();
-                        include( WPAM_ADMIN_PATH . 'views/theme-resume.php');
+                        include( WPAM_ADMIN_PATH . 'template/theme-resume.php');
                         $plugin_theme_output = ob_get_contents();
                         ob_end_clean();
                         echo  $plugin_theme_output ;
@@ -229,7 +229,7 @@ function wpam_admin_render_overview(){
                     foreach( $wpam_themes_theme as $theme ){
                         
                         ob_start();
-                        include( WPAM_ADMIN_PATH . 'views/theme-resume.php');
+                        include( WPAM_ADMIN_PATH . 'template/theme-resume.php');
                         $themes_theme_output = ob_get_contents();
                         ob_end_clean();
                         echo  $themes_theme_output ;

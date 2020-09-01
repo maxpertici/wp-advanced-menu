@@ -167,6 +167,7 @@ add_action( 'wp_update_nav_menu', 'wpam_nav_menu_save_post_refresh', 99, 2 );
 // add_action( 'wp_update_nav_menu_item', 'wpam_nav_menu_save_post_refresh', 99, 3 );
 
 
+
 /**
  * 
  * 
@@ -174,19 +175,20 @@ add_action( 'wp_update_nav_menu', 'wpam_nav_menu_save_post_refresh', 99, 2 );
  * @since 0.4.0
  */
 function wpam_admin_nav_menu_redirect(){
+    
+    $get_menu = sanitize_text_field( $_GET['menu'] );
+    $wp_menu  = absint( $get_menu ) ;
+    
+    $get_action = sanitize_text_field( $_GET['action'] );
 
+    if(  $wp_menu ){
 
-    if(  isset( $_GET['menu'] )  ){
-
-        $wp_menu   = absint( $_GET['menu'] );
         if( is_int( $wp_menu ) && $wp_menu > 0 ){
 
-
-            if( isset( $_GET['action'] ) ){
-                $wp_action = $_GET['action'];
+            if( isset( $get_action ) ){
+                $wp_action = $get_action ;
                 if( $wp_action === 'delete' ){
                     wp_delete_nav_menu(  $wp_menu );
-
                 }
             }
         }
@@ -238,16 +240,17 @@ function wpam_load_nav_menu_screen_theme_includes(){
     // —— Case checlking
 
     $case = '';
-
-    if(  isset( $_GET['menu'] )  ){
-
-        $wp_menu   = absint( $_GET['menu'] );
+    
+    $get_menu = sanitize_text_field( $_GET['menu'] );
+    if(  isset( $get_menu )  ){
+        $wp_menu   = absint( $get_menu );
         if( is_int( $wp_menu ) && $wp_menu > 0 ){ $case = 'selected'; }
     }
 
-    if( isset( $_GET['action'] ) ){
+    $get_action = sanitize_text_field( $_GET['action'] );
+    if( isset( $get_action ) ){
 
-        $wp_action = $_GET['action'];
+        $wp_action = $get_action;
 
         // Delete : ?action=delete&menu=42&_wpnonce=993fa67603
         if( $wp_action === 'delete' ){
@@ -275,7 +278,7 @@ function wpam_load_nav_menu_screen_theme_includes(){
     }
 
     // Check recent
-    if( ! isset( $_GET['menu'] ) && ! isset( $_GET['action'] ) ){
+    if( ! isset( $get_menu ) && ! isset( $get_action ) ){
         $case = 'recent';
     }
 
@@ -299,7 +302,6 @@ function wpam_load_nav_menu_screen_theme_includes(){
     
     if( isset( $menu_id ) ){
         if( ! is_nav_menu( $menu_id ) ){ return ; }
-        // var_dump($menu_id );
     }else{
         return ;
     }
@@ -308,12 +310,8 @@ function wpam_load_nav_menu_screen_theme_includes(){
     // ——
     $wpam = get_transient( WPAM_TRANSIENTS_SLUG );
     $wpam_themes = $wpam['themes'] ;
-
-    // var_dump($wpam_themes);
-    // die();
     $menu_obj = wp_get_nav_menu_object( $menu_id );
-    // var_dump($menu_obj);
-    //die();
+
     
     if( array_key_exists( $menu_obj->slug, $wpam_themes ) ){
         
@@ -335,12 +333,8 @@ function wpam_load_nav_menu_screen_theme_includes(){
             $menus->theme_origin
             );
 
-        
         // includes and mark as loaded
-        // var_dump($dirs);
         wpam_load_theme_functions_files( $dirs, $menus->theme_override );
-
     }
-    
 
 }

@@ -116,7 +116,8 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		
 		$submenu_settings = new stdClass;
 		$submenu_type = get_field(  'wpam_nav_item_generic_submenu_type', $item->ID ) ;
-		
+		$submenu_type = sanitize_text_field( $submenu_type );
+
 		$submenu_settings->type = $submenu_type ;
 		$submenu_settings->class = ' ' ;
 
@@ -124,6 +125,8 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 
 			
 			$submenu_column_number = get_field(  'wpam_nav_item_generic_submenu_colmuns_number', $item->ID ) ;
+			$submenu_column_number = sanitize_text_field( $submenu_column_number );
+
 			$submenu_settings->colmuns_number = $submenu_column_number ;
 
 			$submenu_settings->class .= 'wpam-submenu-columns' . ' ';
@@ -247,7 +250,12 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		$args->wpam->wp_menu = $args->menu ;
 		
 		$args->wpam->wp_class_names = $class_names ;
-		$args->wpam->wpam_item->type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+
+		$get_post_meta_item_type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = sanitize_text_field( $get_post_meta_item_type );
+
+		$args->wpam->wpam_item->type = $get_post_meta_item_type;
+
 		$args->wpam->wpam_item->submenu = $this->get_item_submenu_settings( $args->wpam->wp_item ) ;
 
 		
@@ -308,7 +316,11 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		$args->wpam->wp_item = $item ;
 		$args->wpam->wp_menu = $args->menu ;
 
-		$args->wpam->wpam_item->type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = sanitize_text_field( $get_post_meta_item_type );
+
+		$args->wpam->wpam_item->type = $get_post_meta_item_type;
+		
 		$args->wpam->wpam_item->submenu = $this->get_item_submenu_settings( $args->wpam->wp_item ) ;
 		
 
@@ -423,7 +435,11 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		$args->wpam->wp_class_names = $class_names ;
 		$args->wpam->wp_id = $id ;
 
-		$args->wpam->wpam_item->type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = sanitize_text_field( $get_post_meta_item_type );
+
+		$args->wpam->wpam_item->type = $get_post_meta_item_type;
+
 		$args->wpam->wpam_item->submenu = $this->get_item_submenu_settings( $args->wpam->wp_item ) ;
 
 		$theme_path = wpam_get_template_path( $args, $this->theme_dirs, 'li-start' );
@@ -506,7 +522,11 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		$args->wpam->wp_item = $item ;
 		$args->wpam->wp_menu = $args->menu ;
 
-		$args->wpam->wpam_item->type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = sanitize_text_field( $get_post_meta_item_type );
+
+		$args->wpam->wpam_item->type = $get_post_meta_item_type;
+
 		$args->wpam->wpam_item->submenu = $this->get_item_submenu_settings( $args->wpam->wp_item ) ;
 
 		$theme_path = wpam_get_template_path( $args, $this->theme_dirs, 'item' );
@@ -581,7 +601,11 @@ class WPAM_Menu extends \Walker_Nav_Menu {
 		$args->wpam->wp_item = $item ;
 		$args->wpam->wp_menu = $args->menu ;
 
-		$args->wpam->wpam_item->type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = get_post_meta( $args->wpam->wp_item->ID , '_wpam_custom_item_type' , true );
+		$get_post_meta_item_type = sanitize_text_field( $get_post_meta_item_type );
+
+		$args->wpam->wpam_item->type = $get_post_meta_item_type;
+		
 		$args->wpam->wpam_item->submenu = $this->get_item_submenu_settings( $args->wpam->wp_item ) ;
 
 		$theme_path = wpam_get_template_path( $args , $this->theme_dirs, 'li-stop' );

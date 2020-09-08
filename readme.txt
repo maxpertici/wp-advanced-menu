@@ -13,43 +13,45 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Forget the walker and create powerful navigations with a real theme system.
 WP:AM is a new way to quickly create a powerful, modern and personalized navigation menu for your website.
 You can create WP:AM themes for your menus in the same way as you create WordPress themes for your websites.
-This side-project is still in development, but you already have features bellow integrated into the plugin.
 
 = Warning =
 This plugin is intended for developers. It is still a phase of experimentation.
-To create your custom menu, you can rely on the default theme. The override feature is there for that.
+This side-project is still in development, but you already have features bellow integrated into the plugin.
 
 = Features =
 
 * Theme
-- Child Theme
+-- Child Theme
 Create child themes by defining a theme as a template. If you need a higher level, you can also define another theme as grand parent: origin.
-- Library
+-- Library
 Load your themes (or those of others) from a WordPress theme or plugin. Create your own library, reuse and improve your menus from project to project.
-- Override
+-- Override
 Quickly personalize an existing theme with the override system. Copy an item and customize it. That’s it.
 
 * Item
-- Hierarchy
+-- Hierarchy
 Catch an item easily with the hierarchy template system for post type, taxonomy, archive and custom items.
-- Types
+-- Types
 Each menu item now has a type to help you create more advanced menus. WP:AM also offers new types of elements such as the image type or the Gutenberg block.
 
 * Panel
-- Breakpoints
+-- Breakpoints
 No need to rework your css files, you can now adjust your breakponts directly in the back office.
-- Options
+-- Options
 Add your theme options to the back office and configure your menu according to the needs of the current project.
 
 * Misc
-- ACF
+-- ACF
 WP:AM is built on ACF. So use your favorite fields and build your ideas :)
-- Hooks
+-- Hooks
 WP:AM likes hooks and is starting to create new ones to make life easier for developers.
-- Cache
+-- Cache
 WP:AM is compatible with cache plugins. Your stylesheets will be properly supported.
-- Translation
+-- Translation
 WP:AM is translation ready. Fortunately :P
+
+= Documentation =
+A draft <a href="https://maxpertici.slite.com/p/note/SyHKacXjEJffPmco7QZPaN">documentation</a> is available (and almost up to date)
 
 == Installation ==
 1. Install the plugin and activate.

@@ -242,13 +242,16 @@ function wpam_load_nav_menu_screen_theme_includes(){
     $case = '';
     
     $get_menu = sanitize_text_field( $_GET['menu'] );
+    
     if(  isset( $get_menu )  ){
         $wp_menu   = absint( $get_menu );
         if( is_int( $wp_menu ) && $wp_menu > 0 ){ $case = 'selected'; }
     }
-
-    $get_action = sanitize_text_field( $_GET['action'] );
-    if( isset( $get_action ) ){
+    
+    if( isset( $_GET['action'] ) ){
+        $get_action = sanitize_text_field( $_GET['action'] );
+    }
+    if( isset( $get_action ) && ( $get_action !== null ) ){
 
         $wp_action = $get_action;
 
@@ -289,7 +292,7 @@ function wpam_load_nav_menu_screen_theme_includes(){
         $menu_id = $wp_menu ;
     }
 
-    if( $case === 'recent' ){
+    if( $case === 'recent' || $case === '' ){
         
         // get last menu
         $nav_menus  = wp_get_nav_menus();

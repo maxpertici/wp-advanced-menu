@@ -357,7 +357,8 @@ function wpam_do_action_wpam_enqueue_scripts(){
 function wpam_check_if_generated_css_folder_exist( $wpam_menu_slug, $wpam_theme_id  ){
 
     // MQ — @source : https://wp-mix.com/wordpress-create-upload-files-directories/
-
+    // TODO : ADD HTACCESS
+    
     // uploads
     $wp_upload_dir = wp_upload_dir();
 
@@ -365,36 +366,26 @@ function wpam_check_if_generated_css_folder_exist( $wpam_menu_slug, $wpam_theme_
     $wpam_updaload_dir = $wp_upload_dir['basedir'] . '/' . 'wpam' ;
     if( ! file_exists( $wpam_updaload_dir ) ){ wp_mkdir_p( $wpam_updaload_dir ); };
     if( chmod( $wpam_updaload_dir, 0777) ) { chmod( $wpam_updaload_dir, 0755); }
-    // wpam/index.html
-    $path_to_index_html = $wpam_updaload_dir . '/' . 'index.html' ;
-    if( ! file_exists( $path_to_index_html ) ){ file_put_contents( $path_to_index_html, ''); }
 
+    // wpam/.htaccess
+    $path_to_htaccess = $wpam_updaload_dir . '/' . '.htaccess' ;
+    if( ! file_exists( $path_to_htaccess ) ){ file_put_contents( $path_to_htaccess, 'Deny from all'); }
 
-    // wpam/dit/
+    // wpam/dist/
     $wpam_dist_updload_dir = $wp_upload_dir['basedir'] . '/' . 'wpam' . '/' . 'dist';
     if( ! file_exists( $wpam_dist_updload_dir ) ){ wp_mkdir_p( $wpam_dist_updload_dir ); };
     if( chmod( $wpam_dist_updload_dir, 0777) ) { chmod( $wpam_dist_updload_dir, 0755); }
-    // wpam/dit/index.html
-    $path_to_index_html = $wpam_dist_updload_dir . '/' . 'index.html' ;
-    if( ! file_exists( $path_to_index_html ) ){ file_put_contents( $path_to_index_html, ''); }
 
-
-    // wpam/dit/menu-slug/
+    // wpam/dist/menu-slug/
     $wpam_menu_updload_dir = $wp_upload_dir['basedir'] . '/' . 'wpam' . '/' . 'dist' . '/' . $wpam_menu_slug ;
     if( ! file_exists( $wpam_menu_updload_dir ) ){ wp_mkdir_p( $wpam_menu_updload_dir ); };
     if( chmod( $wpam_menu_updload_dir, 0777) ) { chmod( $wpam_menu_updload_dir, 0755); }
-    // wpam/dit/menu-slug/index.html
-    $path_to_index_html = $wpam_menu_updload_dir . '/' . 'index.html' ;
-    if( ! file_exists( $path_to_index_html ) ){ file_put_contents( $path_to_index_html, ''); }
 
 
-    // wpam/dit/menu-slug/theme-id/
+    // wpam/dist/menu-slug/theme-id/
     $wpam_theme_updload_dir = $wp_upload_dir['basedir'] . '/' . 'wpam' . '/' . 'dist' . '/' . $wpam_menu_slug . '/' . $wpam_theme_id ;
     if( ! file_exists( $wpam_theme_updload_dir ) ){ wp_mkdir_p( $wpam_theme_updload_dir ); };
     if( chmod( $wpam_theme_updload_dir, 0777) ) { chmod( $wpam_theme_updload_dir, 0755); }
-    // wpam/dit/menu-slug/theme-id/index.html
-    $path_to_index_html = $wpam_theme_updload_dir . '/' . 'index.html' ;
-    if( ! file_exists( $path_to_index_html ) ){ file_put_contents( $path_to_index_html, ''); }
 
 
     return $wpam_theme_updload_dir ;
@@ -437,13 +428,59 @@ function wpam_generate_css_file( $media, $filename, $folder_path, $src ){
 
     $bits  = "\n"  . "\n" . ' @media ' . $media . ' { ' . "\n" . "\n";
 
-    if ( ! function_exists( '\get_home_path' ) ) {
+    if ( ! function_exists( 'get_home_path' ) ) {
         include_once ABSPATH . '/wp-admin/includes/file.php';
     }
-    $home_path = \get_home_path();
-    $file_path = $home_path . wp_make_link_relative( $src ) ;
-    while( strpos( ($file_path=str_replace('//','/',$file_path)), '//' ) !== false );
+
+    // to fix : doouble folder install path base 
+    $home_path = get_home_path();
     
+    // need to check if folder at the end and the begining
+    $home_path_explode = explode('/',$home_path);
+    $home_path_explode = array_filter( $home_path_explode );
+    $home_path_explode = array_values( $home_path_explode );
+    $home_path_explode = array_reverse( $home_path_explode );
+    
+    // $home_path_last_folder_slug = $home_path_explode[ ( count( $home_path_explode ) - 1 )  ] ;
+
+    $file_base_path    = $home_path ;
+    $file_relative_uri = wp_make_link_relative( $src ) ;
+
+    $file_path_explode = explode('/',$file_relative_uri);
+    $file_path_explode = array_filter( $file_path_explode );
+    $file_path_explode = array_values( $file_path_explode );
+    
+    // compare and cut
+    $i = 0 ;
+    while(  array_key_exists( $i , $home_path_explode ) || array_key_exists( $i , $file_path_explode ) ){
+        
+        if( $home_path_explode[ 0 ] !== $file_path_explode[ 0 ] ){
+            $i = null ;
+            break ;
+        }
+
+        if( $home_path_explode[ $i ] !== $file_path_explode[ $i ] ){
+            $i = $i - 1 ;
+            break ;
+        }
+        $i = $i + 1 ;
+    }
+    
+    $common_part = '' ;
+
+    if( ! is_null( $i ) ){
+        for( $k = 0; $k <= $i; $k ++ ){
+            $common_part .= '/' .  $file_path_explode[ $k ] ;
+        }
+    }
+
+    // path cleaning
+    $file_relative_uri = preg_replace('/^' . preg_quote( $common_part, '/') . '/', '', $file_relative_uri);
+    
+    // check file
+    $file_path = $file_base_path . $file_relative_uri ;
+        
+    while( strpos( ( $file_path = str_replace( '//', '/', $file_path ) ), '//' ) !== false );
     $bits .= file_get_contents( $file_path );
 
     $bits .= "\n" . "\n" .' } ';

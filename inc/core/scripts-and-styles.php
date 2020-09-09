@@ -89,18 +89,22 @@ function wpam_register_style(
                 // var_dump($ui['menu']);
                 // var_dump($menu);
                 // var_dump($wpam_menus);
+                // var_dump($wpam_transients);
+                
+                // serach menu slug
+                $menu_exist = false ;
+                
+                foreach( $wpam_menus as $menu_item ){
 
-                if( array_key_exists( $theme_id, $wpam_menus ) === false ){
-                    
-                    // var_dump( $args );
-                    // if( $args['menu'] =! '' ){ $menu =  $args['menu'] ; }
+                    if( $menu_item[0] === $theme_id ){
+                        $menu_exist = true ;
+                        $menu = $menu_item[ 1 ] ; // menu obj
+                    }
+                }
+
+                if( ! $menu_exist ){
                     $menu = (object) array() ;
                     $menu->slug = 'unknown';
-                    
-                    
-                }else{
-                    $menu = $wpam_menus[ $theme_id ] ;
-
                 }
 
                 $range_value = get_field( $unique_id, $menu );
@@ -151,7 +155,8 @@ function wpam_register_style(
                 if ( ! function_exists( '\get_home_path' ) ) {
                     include_once ABSPATH . '/wp-admin/includes/file.php';
                 }
-                $home_path = \get_home_path();
+                
+                $home_path = get_home_path();
                 $path_of_generated_css = '/' .str_replace( $home_path, '', $path_of_generated_css );
 
                 // register in wpam_styles_collector
@@ -168,6 +173,11 @@ function wpam_register_style(
                 $upload_dir = wp_upload_dir();
                 $path = trailingslashit( $upload_dir['basedir'] );
                 wpam_dev_mode_flush_files( $path . 'wpam/' );
+                
+                /*
+                unlink( $path . 'wpam/.htaccess' );
+                rmdir( $path . 'wpam/' );
+                */
 
                 // register style with filter for next last print action
                 if( $load_with_theme_system ){
@@ -367,9 +377,34 @@ function wpam_check_if_generated_css_folder_exist( $wpam_menu_slug, $wpam_theme_
     if( ! file_exists( $wpam_updaload_dir ) ){ wp_mkdir_p( $wpam_updaload_dir ); };
     if( chmod( $wpam_updaload_dir, 0777) ) { chmod( $wpam_updaload_dir, 0755); }
 
+    /*
+    Order deny,allow
+    Deny from all
+
+    <Files ~ "\.(xml|css|jpe?g|png|gif|js|pdf)$">
+    Allow from all
+    </Files>
+
+    <Files ~ "baz\.php$">
+    Allow from all
+    </Files>
+    */
     // wpam/.htaccess
     $path_to_htaccess = $wpam_updaload_dir . '/' . '.htaccess' ;
-    if( ! file_exists( $path_to_htaccess ) ){ file_put_contents( $path_to_htaccess, 'Deny from all'); }
+    if( ! file_exists( $path_to_htaccess ) ){
+        file_put_contents(
+            $path_to_htaccess,
+            '
+            Order deny,allow
+            Deny from all
+        
+            <Files ~ "\.(js|css)$">
+            Allow from all
+            </Files>
+
+            '
+        );
+    }
 
     // wpam/dist/
     $wpam_dist_updload_dir = $wp_upload_dir['basedir'] . '/' . 'wpam' . '/' . 'dist';

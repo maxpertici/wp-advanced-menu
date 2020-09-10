@@ -861,7 +861,7 @@ function wpam_themes_styles( $file = null, $line = null ){
         $wpam_styles_collector = array();
     }
 
-    $theme_name = _wpam_extract_theme_name( $file );
+    $theme_name = wpam_extract_theme_name( $file );
     $loading_reference = 'wpam-loading-' . $theme_name . '-'  . $line ;
     
     return $loading_reference ;
@@ -875,7 +875,7 @@ function wpam_themes_styles( $file = null, $line = null ){
  * 
  *  @since 0.2.0
  */
-function _wpam_extract_theme_name( $file_path ){
+function wpam_extract_theme_name( $file_path ){
 
     $theme_name = $file_path ;
     $theme_name = rtrim( $theme_name, "functions.php" );

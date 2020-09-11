@@ -196,6 +196,7 @@ function wpam_admin_nav_menu_redirect(){
     
     $nav_menus  = wp_get_nav_menus();
     $menu_id = $nav_menus[0]->term_id ;
+    
     wp_redirect( admin_url( 'nav-menus.php?menu=' . intval( $menu_id ) ) );
     exit(); 
 }
@@ -251,6 +252,7 @@ function wpam_load_nav_menu_screen_theme_includes(){
     if( isset( $_GET['action'] ) ){
         $get_action = sanitize_text_field( $_GET['action'] );
     }
+    
     if( isset( $get_action ) && ( $get_action !== null ) ){
 
         $wp_action = $get_action;
@@ -275,30 +277,44 @@ function wpam_load_nav_menu_screen_theme_includes(){
                         
             if( is_int( $wp_menu ) && $wp_menu  > 0 ){ $case = 'selected'; }
             if( is_int( $wp_menu ) && $wp_menu == 0 ){ $case = 'creation'; }
-
         }
-        
     }
 
     // Check recent
-    if( ! isset( $get_menu ) && ! isset( $get_action ) ){
+    if( $get_menu === '' && $get_action === NULL ){
         $case = 'recent';
     }
 
-
     // —— —— —— —— —— —— —— —— —— ——
     // Cases $menu_id ?
+    
     if( $case === 'selected' ){
         $menu_id = $wp_menu ;
     }
 
-    if( $case === 'recent' || $case === '' ){
+    if( $case === 'recent' ){
         
         // get last menu
+        // TODO - wpml support
+        /*
+        if( class_exists('SitePress') ){
+			// @source : https://wpml.org/forums/topic/using-icl_language_code-and-wp_nav_menu-to-retrieve-translated-menu/
+			// apply_filters( 'wpml_object_id', $id, 'nav_menu', FALSE, 'fr' );
+			var_dump( get_locale() );
+			wp_nav_menu( array( 'menu' => 'Header Contact '.strtoupper(ICL_LANGUAGE_CODE) ) );
+			
+	        $nav_menus  = wp_get_nav_menus(  );
+	        
+	        $menu_id = $nav_menus[0]->term_id ;			
+	    }
+        */
+
         $nav_menus  = wp_get_nav_menus();
         $menu_id = $nav_menus[0]->term_id ;
+        
         wp_redirect( admin_url( 'nav-menus.php?menu=' . intval( $menu_id ) ) );
         exit();
+        
     }
 
     // ——

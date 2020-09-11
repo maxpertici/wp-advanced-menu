@@ -62,6 +62,9 @@ A draft <a href="https://maxpertici.slite.com/p/note/SyHKacXjEJffPmco7QZPaN">doc
 
 == Changelog ==
 
+= 1.6 =
+* Fix nav-menu.php page
+
 = 1.5 =
 * rename function prefixed with _
 

@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) or	die();
  */
 
 
-require_once( WPAM_LEGACY_MENU_METABOX . 'item-types/wpam-item-type-menu.php' );
+// require_once( WPAM_LEGACY_MENU_METABOX . 'item-types/wpam-item-type-menu.php' );
 require_once( WPAM_LEGACY_MENU_METABOX . 'item-types/wpam-item-type-custom.php' );
 require_once( WPAM_LEGACY_MENU_METABOX . 'item-types/wpam-item-type-post_type_archive.php' );
 

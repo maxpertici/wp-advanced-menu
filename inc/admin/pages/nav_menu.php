@@ -295,26 +295,13 @@ function wpam_load_nav_menu_screen_theme_includes(){
     if( $case === 'recent' ){
         
         // get last menu
-        // TODO - wpml support
-        /*
-        if( class_exists('SitePress') ){
-			// @source : https://wpml.org/forums/topic/using-icl_language_code-and-wp_nav_menu-to-retrieve-translated-menu/
-			// apply_filters( 'wpml_object_id', $id, 'nav_menu', FALSE, 'fr' );
-			var_dump( get_locale() );
-			wp_nav_menu( array( 'menu' => 'Header Contact '.strtoupper(ICL_LANGUAGE_CODE) ) );
-			
-	        $nav_menus  = wp_get_nav_menus(  );
-	        
-	        $menu_id = $nav_menus[0]->term_id ;			
-	    }
-        */
-
-        $nav_menus  = wp_get_nav_menus();
-        $menu_id = $nav_menus[0]->term_id ;
-        
-        wp_redirect( admin_url( 'nav-menus.php?menu=' . intval( $menu_id ) ) );
-        exit();
-        
+        if( ! class_exists('SitePress') ){
+            $nav_menus  = wp_get_nav_menus();
+            $menu_id = $nav_menus[0]->term_id ;
+            
+            wp_redirect( admin_url( 'nav-menus.php?menu=' . intval( $menu_id ) ) );
+            exit();
+        }
     }
 
     // ——

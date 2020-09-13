@@ -4,7 +4,7 @@ Donate link:
 Tags: Navigation, Menu, Walker, Theme
 Requires at least: 5.0
 Tested up to: 5.5
-Stable tag: 1.6
+Stable tag: 1.7
 Requires PHP: 5.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -61,6 +61,9 @@ A draft <a href="https://maxpertici.slite.com/p/note/SyHKacXjEJffPmco7QZPaN">doc
 
 
 == Changelog ==
+
+= 1.7 =
+* Fix nav-menu.php WPML compatibility
 
 = 1.6 =
 * Fix nav-menu.php page

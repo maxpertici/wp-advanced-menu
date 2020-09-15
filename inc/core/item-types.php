@@ -16,16 +16,28 @@ defined( 'ABSPATH' ) or	die();
 // garbage for field
 $wpam_nav_item_fields_garbage = array(
 
-    // block
+    // heading
+    'wpam_nav_item_heading_selector',
+
+    // paragraph
+    'wpam_nav_item_paragraph_text',
 
     // image
-    'wpam_nav_item_image_selector',
+    'wpam_nav_item_image_media',
+    'wpam_nav_item_image_size',
+
+    // content
+    'wpam_nav_item_content_selector',
+
+    // block
+    'wpam_nav_item_wpblock_selector',
 
     // item (generic)
     'wpam_nav_item_generic_submenu_type',
     'wpam_nav_item_generic_submenu_colmuns_number',
 
 );
+
 apply_filters( 'wpam_fields_garbage_collector', $wpam_nav_item_fields_garbage );
 
 
@@ -34,7 +46,110 @@ apply_filters( 'wpam_fields_garbage_collector', $wpam_nav_item_fields_garbage );
 $wpam_prefix = '#wpam' . '_';
 $wpam_custom_menu_item_spec = array(
 
- 
+
+    
+    /**
+     *  Heading
+     */
+    
+    'heading' => array(
+        'label' => __( 'Heading' , 'wp-advanced-menu'),
+
+        'slug'  => 'heading',
+        'prefix' => $wpam_prefix . 'heading',
+
+        'acf_group' => array(
+            'key'   => WPAM_ACF_PREFIX_GROUP.'wpam_group_nav_item_heading',
+            'title' => __( 'Heading settings group', 'wp-advanced-menu' ),
+        ),
+
+        'acf_fields' => array(
+            
+            array(
+                'key'   => WPAM_ACF_PREFIX_FIELD . 'wpam_field_wpam_nav_item_heading_selector',
+                'label' => __( 'Heading level' , 'wp-advanced-menu'),
+                'name'  => 'wpam_nav_item_heading_selector',
+                'type'  => 'select',
+
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => 'wpam-heading-settings-field__selector',
+                    'id' => '',
+                ),
+
+                'choices' => array(
+                    'h2' => __( 'Heading 2', 'wp-advanced-menu' ),
+                    'h3' => __( 'Heading 3', 'wp-advanced-menu' ),
+                    'h4' => __( 'Heading 4', 'wp-advanced-menu' ),
+                    'h5' => __( 'Heading 5', 'wp-advanced-menu' ),
+                    'h6' => __( 'Heading 6', 'wp-advanced-menu' ),
+                ),
+
+                'default_value' => false,
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+        ),
+
+
+
+    ),
+
+
+
+
+    /**
+     *  Paragraph
+     */
+    
+    'paragraph' => array(
+        'label'  => __( 'Paragraph' , 'wp-advanced-menu'),
+        'slug' => 'paragraph',
+
+        'prefix' => $wpam_prefix . 'paragraph',
+
+        'acf_group' => array(
+            'key'   => WPAM_ACF_PREFIX_GROUP.'wpam_group_nav_item_paragraph',
+            'title' => __( 'Paragraph settings group', 'wp-advanced-menu' ),
+        ),
+
+        'acf_fields' => array(
+
+            array(
+                'key'   => WPAM_ACF_PREFIX_FIELD . 'wpam_field_wpam_nav_item_paragraph_text',
+                'label' => __( 'Text' , 'wp-advanced-menu'),
+                'name'  => 'wpam_nav_item_paragraph_text',
+                'type'  => 'textarea',
+
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => 'wpam-paragraph-settings-field__text',
+                    'id' => '',
+                ),
+
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'new_lines' => 'br',
+            ),
+
+        ),
+
+    ),
+
 
     /**
      *  Image type
@@ -54,8 +169,8 @@ $wpam_custom_menu_item_spec = array(
             
             array(
                 'key' => WPAM_ACF_PREFIX_FIELD.'wpam_field_wpam_nav_item_image_selector',
-                'label' => __( 'Image settings', 'wp-advanced-menu' ),
-                'name' => 'wpam_nav_item_image_selector',
+                'label' => __( 'Image', 'wp-advanced-menu' ),
+                'name' => 'wpam_nav_item_image_media',
 
                 'type' => 'image',
                 'instructions' => '',
@@ -63,8 +178,8 @@ $wpam_custom_menu_item_spec = array(
                 'conditional_logic' => 0,
 
                 'wrapper' => array(
-                    'width' => '',
-                    'class' => 'wpam-image-settings-field__selector',
+                    'width' => '50',
+                    'class' => 'wpam-image-settings-field__media',
                     'id' => '',
                 ),
 
@@ -79,6 +194,34 @@ $wpam_custom_menu_item_spec = array(
                 'max_height' => '',
                 'max_size' => '',
                 'mime_types' => '',
+            ),
+
+            array(
+                'key'   => WPAM_ACF_PREFIX_FIELD.'wpam_field_wpam_nav_item_image_size',
+                'label' => __( 'Size', 'wp-advanced-menu' ),
+                'name'  => 'wpam_nav_item_image_size',
+
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+
+                'wrapper' => array(
+                    'width' => '50',
+                    'class' => 'wpam-image-settings-field__size',
+                    'id'    => '',
+                ),
+
+                'choices' => array(),
+
+                'default_value' => false,
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+
+                'return_format' => 'array',
+                'ajax' => 0,
+                'placeholder' => '',
             ),
             
         ),
@@ -201,8 +344,8 @@ $wpam_custom_menu_item_spec = array(
 
 
     ),
-    
-    
+
+
 
     /**
      *  Post type archive

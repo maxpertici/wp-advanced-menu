@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Advanced Menu\n"
-"POT-Creation-Date: 2020-08-16 22:27+0200\n"
-"PO-Revision-Date: 2020-08-16 22:28+0200\n"
+"POT-Creation-Date: 2020-09-15 18:25+0200\n"
+"PO-Revision-Date: 2020-09-15 18:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -51,24 +51,24 @@ msgstr ""
 "fonctionnalités pour les menus de navigation. Cette extension est encore "
 "expérimentale pour le moment."
 
-#: inc/admin/pages/wpam_overview.php:63
+#: inc/admin/pages/wpam_overview.php:64
 msgid "Documentation"
 msgstr "Documentation"
 
-#: inc/admin/pages/wpam_overview.php:69
+#: inc/admin/pages/wpam_overview.php:70
 msgid "Draft documentation is available (and almost up to date)"
 msgstr "Un brouillon de documentation est disponible (et presque à jour)"
 
-#: inc/admin/pages/wpam_overview.php:75
+#: inc/admin/pages/wpam_overview.php:76
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Go to documentation →</a>"
 msgstr "<a href=\"%s\" target=\"_blank\">Aller à la documentation →</a>"
 
-#: inc/admin/pages/wpam_overview.php:87
+#: inc/admin/pages/wpam_overview.php:88
 msgid "Feedback"
 msgstr "Feedback"
 
-#: inc/admin/pages/wpam_overview.php:93
+#: inc/admin/pages/wpam_overview.php:94
 msgid ""
 "All feedback is welcome. It helps me improve this plugin. Thanks for your "
 "help :)"
@@ -76,35 +76,37 @@ msgstr ""
 "Tous les feedbaks sont bienvenus. Cela m’aide à améliorer cette extension. "
 "Merci pour votre aide  :)"
 
-#: inc/admin/pages/wpam_overview.php:99
+#: inc/admin/pages/wpam_overview.php:100
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\">Write feedback →</a>"
 msgstr "<a href=\"%s\" target=\"_blank\">Écrire un feedback →</a>"
 
-#: inc/admin/pages/wpam_overview.php:115
+#: inc/admin/pages/wpam_overview.php:116
 msgid "Themes"
 msgstr "Themes"
 
-#: inc/admin/pages/wpam_overview.php:162
+#: inc/admin/pages/wpam_overview.php:163
 msgid "Included in WP:AM"
 msgstr "Inclus dans WP:AM"
 
-#: inc/admin/pages/wpam_overview.php:193
+#: inc/admin/pages/wpam_overview.php:194
 msgid "From plugins"
 msgstr "Fournis par les extensions"
 
-#: inc/admin/pages/wpam_overview.php:225
+#: inc/admin/pages/wpam_overview.php:226
 msgid "From themes"
 msgstr "Fournis par les themes."
 
 #: inc/admin/wp_admin.php:14 inc/admin/wp_admin.php:15
-#: inc/core/item-types.php:170
+#: inc/core/item-types.php:279
 msgid "Reusable Blocks"
 msgstr "Blocs réutilisables"
 
 #: inc/admin/wp_admin.php:34 inc/admin/wp_admin.php:35
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:79
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:110
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:108
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:171
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:202
 #: inc/legacy-menu-metabox/wpam-menu-item-types.php:101
 msgid "WP:AM"
 msgstr "WP:AM"
@@ -114,7 +116,7 @@ msgid "Overview"
 msgstr "Général"
 
 #: inc/admin/wp_admin.php:58 inc/admin/wp_admin.php:59
-#: inc/core/item-types.php:113
+#: inc/core/item-types.php:222
 msgid "Contents"
 msgstr "Contenus"
 
@@ -150,32 +152,80 @@ msgstr "Ignorer ce message."
 msgid "Media queries"
 msgstr "Media queries"
 
-#: inc/core/item-types.php:43
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:141
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:150
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:155
+#: inc/core/item-types.php:51
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
+msgid "Heading"
+msgstr ""
+
+#: inc/core/item-types.php:58
+msgid "Heading settings group"
+msgstr ""
+
+#: inc/core/item-types.php:65 inc/core/item-types.php:123
+msgid "Heading level"
+msgstr ""
+
+#: inc/core/item-types.php:80
+msgid "Heading 1"
+msgstr ""
+
+#: inc/core/item-types.php:81
+msgid "Heading 2"
+msgstr ""
+
+#: inc/core/item-types.php:82
+msgid "Heading 3"
+msgstr ""
+
+#: inc/core/item-types.php:83
+msgid "Heading 4"
+msgstr ""
+
+#: inc/core/item-types.php:84
+msgid "Heading 5"
+msgstr ""
+
+#: inc/core/item-types.php:85
+msgid "Heading 6"
+msgstr ""
+
+#: inc/core/item-types.php:110
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:117
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:122
+msgid "Paragraph"
+msgstr ""
+
+#: inc/core/item-types.php:117
+msgid "Paragraph settings group"
+msgstr ""
+
+#: inc/core/item-types.php:152
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:139
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:148
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:153
 msgid "Image"
 msgstr "Image"
 
-#: inc/core/item-types.php:50
+#: inc/core/item-types.php:159
 msgid "Image settings group"
 msgstr "Groupe de réglages d’image"
 
-#: inc/core/item-types.php:57
+#: inc/core/item-types.php:166
 msgid "Image settings"
 msgstr "Réglages de l’image"
 
-#: inc/core/item-types.php:98
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:119
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:124
+#: inc/core/item-types.php:207
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:211
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:216
 msgid "Content"
 msgstr "Contenus"
 
-#: inc/core/item-types.php:105
+#: inc/core/item-types.php:214
 msgid "Content settings group"
 msgstr "Groupe de réglages du contenu"
 
-#: inc/core/item-types.php:120
+#: inc/core/item-types.php:229
 #, php-format
 msgid ""
 "Choose your <a href=\"edit.php?post_type=wpam-content\">%s</a> or <a href="
@@ -184,25 +234,25 @@ msgstr ""
 "Choisissez votre <a href=\"edit.php?post_type=wpam-content\">%s</a> ou <a "
 "href=\"post-new.php?post_type=wpam-content\">%s</a> si vide."
 
-#: inc/core/item-types.php:121
+#: inc/core/item-types.php:230
 msgid "content"
 msgstr "contenu"
 
-#: inc/core/item-types.php:122 inc/core/item-types.php:178
+#: inc/core/item-types.php:231 inc/core/item-types.php:287
 msgid "create one"
 msgstr "créez en un"
 
-#: inc/core/item-types.php:156
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:88
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:93
+#: inc/core/item-types.php:265
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:180
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:185
 msgid "Block"
 msgstr "Bloc"
 
-#: inc/core/item-types.php:163
+#: inc/core/item-types.php:272
 msgid "Block settings group"
 msgstr "Groupe de réglages de Bloc"
 
-#: inc/core/item-types.php:176
+#: inc/core/item-types.php:285
 #, php-format
 msgid ""
 "Choose your <a href=\"edit.php?post_type=wp_block\">%s</a> or <a href=\"post-"
@@ -211,75 +261,75 @@ msgstr ""
 "Choisissez votre <a href=\"edit.php?post_type=wp_block\">%s</a> ou <a href="
 "\"post-new.php?post_type=wp_block\">%s</a> si vide."
 
-#: inc/core/item-types.php:177
+#: inc/core/item-types.php:286
 msgid "reusable block"
 msgstr "Bloc réutilisable"
 
-#: inc/core/item-types.php:212
+#: inc/core/item-types.php:321
 msgid "Post Type Archive"
 msgstr "Archive de type de publication"
 
-#: inc/core/item-types.php:230
+#: inc/core/item-types.php:339
 msgid "Menu"
 msgstr "Menu"
 
-#: inc/core/item-types.php:246
+#: inc/core/item-types.php:355
 msgid "Item"
 msgstr "Élément"
 
-#: inc/core/item-types.php:253
+#: inc/core/item-types.php:362
 msgid "Item settings group"
 msgstr "Groupe de réglages d'élément"
 
-#: inc/core/item-types.php:260
+#: inc/core/item-types.php:369
 msgid "Submenu type"
 msgstr "Type de sous-menu"
 
-#: inc/core/item-types.php:272
+#: inc/core/item-types.php:381
 msgid "Default"
 msgstr "Par défaut"
 
-#: inc/core/item-types.php:273
+#: inc/core/item-types.php:382
 msgid "Columns"
 msgstr "Colonnes"
 
-#: inc/core/item-types.php:287
+#: inc/core/item-types.php:396
 msgid "Number of columns"
 msgstr "Nombre de colonnes"
 
-#: inc/core/item-types.php:308
+#: inc/core/item-types.php:417
 msgid "Two"
 msgstr "Deux"
 
-#: inc/core/item-types.php:309
+#: inc/core/item-types.php:418
 msgid "Three"
 msgstr "Trois"
 
-#: inc/core/item-types.php:310
+#: inc/core/item-types.php:419
 msgid "Four"
 msgstr "Quatre"
 
-#: inc/core/item-types.php:311
+#: inc/core/item-types.php:420
 msgid "Five"
 msgstr "Cinq"
 
-#: inc/core/item-types.php:312
+#: inc/core/item-types.php:421
 msgid "Six"
 msgstr "Six"
 
-#: inc/core/item-types.php:313
+#: inc/core/item-types.php:422
 msgid "Seven"
 msgstr "Sept"
 
-#: inc/core/item-types.php:314
+#: inc/core/item-types.php:423
 msgid "Eight"
 msgstr "Huit"
 
-#: inc/core/item-types.php:315
+#: inc/core/item-types.php:424
 msgid "Nine"
 msgstr "Neuf"
 
-#: inc/core/item-types.php:316
+#: inc/core/item-types.php:425
 msgid "Ten"
 msgstr "Dix"
 
@@ -419,7 +469,7 @@ msgstr "Éléments personnalisés"
 msgid "View All"
 msgstr "Voir tout"
 
-#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:166
+#: inc/legacy-menu-metabox/item-types/wpam-item-type-custom.php:230
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-menu.php:128
 #: inc/legacy-menu-metabox/item-types/wpam-item-type-post_type_archive.php:132
 msgid "Add to Menu"

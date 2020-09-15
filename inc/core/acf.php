@@ -78,6 +78,12 @@ function wpam_load_acf_field(){
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-wpblock.php' );
 
         // 90
+        include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-heading.php' );
+
+        // 90
+        include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-paragraph.php' );
+
+        // 90
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-image.php' );
 
         // 90

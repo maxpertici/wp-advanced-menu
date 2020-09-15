@@ -126,6 +126,16 @@ Item types > icons
     background: url(../img/icons/wpam-image.svg) center center / 20px 20px no-repeat transparent;
 }
 
+#menu-to-edit .wpam-item__heading .item-title:before{
+    /* background-color: #fdec00; */
+    background: url(../img/icons/wpam-heading.svg) center center / 20px 20px no-repeat transparent;
+}
+
+#menu-to-edit .wpam-item__paragraph .item-title:before{
+    /* background-color: #fdec00; */
+    background: url(../img/icons/wpam-paragraph.svg) center center / 20px 20px no-repeat transparent;
+}
+
 #menu-to-edit .wpam-item__wpblock .item-title:before,
 #menu-to-edit .wpam-item__content .item-title:before{
     /* background-color: #fdec00; */

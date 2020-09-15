@@ -333,9 +333,11 @@ jQuery(document).ready(function($){
             // TODO : improve translation support
             // TODO : make this list dynamic
             if(
-                item_type === 'image'   ||
-                item_type === 'wpblock' ||
-                item_type === 'menu'    ||
+                item_type === 'heading'   ||
+                item_type === 'paragraph' ||
+                item_type === 'image'     ||
+                item_type === 'wpblock'   ||
+                item_type === 'menu'      ||
                 item_type === 'content'
 
                 ){
@@ -391,10 +393,9 @@ jQuery(document).ready(function($){
             for (var i = 0; i < item_keys.length ; i++) {
 
                 if(  (nav_item_type === item_keys[ i ].type) || ('item' === item_keys[ i ].type) ){
-                    
+
                     if( field.data.key === item_keys[ i ].key ){
                         keep_the_field = true;
-
                     }
                     
                    // keep_the_field = true;

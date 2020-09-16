@@ -136,10 +136,24 @@ Item types > icons
     background: url(../img/icons/wpam-paragraph.svg) center center / 20px 20px no-repeat transparent;
 }
 
-#menu-to-edit .wpam-item__wpblock .item-title:before,
+#menu-to-edit .wpam-item__wpblock .item-title:before{
+    background: url(../img/icons/wpam-wpblock.svg) center center / 20px 20px no-repeat transparent;
+}
+
 #menu-to-edit .wpam-item__content .item-title:before{
-    /* background-color: #fdec00; */
     background: url(../img/icons/wpam-content.svg) center center / 20px 20px no-repeat transparent;
+}
+
+#menu-to-edit .wpam-item__shortcode .item-title:before{
+    background: url(../img/icons/wpam-shortcode.svg) center center / 20px 20px no-repeat transparent;
+}
+
+#menu-to-edit .wpam-item__search .item-title:before{
+    background: url(../img/icons/wpam-search.svg) center center / 20px 20px no-repeat transparent;
+}
+
+#menu-to-edit .wpam-item__dynamic .item-title:before{
+    background: url(../img/icons/wpam-dynamic.svg) center center / 20px 20px no-repeat transparent;
 }
 
 
@@ -172,9 +186,22 @@ Menu item > submenu options
     table-layout: fixed;
 }
 */
+
 .wpam-submenu-type-settings-field__type,
 .wpam-submenu-type-settings-field__colmuns-number{
-    display: inline-block;
+    float: left;
+
     width: 49%;
     width: calc(50% - 3px);
+
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+.wpam-submenu-type-settings-field__type{
+    clear: left;
+}
+
+
+.wpam-submenu-type-settings-field__colmuns-number{
+    clear: none !important;
 }

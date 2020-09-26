@@ -1,5 +1,12 @@
 
 /*
+Metabox
+*/
+#tabs-panel-wpam-item-type-custom-all{
+    max-height: 270px;
+}
+
+/*
 ACF
 */
 .acf-menu-settings .acf-fields .acf-range-wrap input[type="number"] {
@@ -112,11 +119,6 @@ Item types > icons
     background: url(../img/icons/custom.svg) center center / 20px 20px no-repeat transparent;
 }
 
-#menu-to-edit .wp-item-type__custom.wpam-item__menu .item-title:before{
-    /* background-color: #23282d; */
-    background: url(../img/icons/post_type_archive.svg) center center / 20px 20px no-repeat transparent;
-}
-
 
 .wpam-item-type{}
 .wpam-item__image{}
@@ -152,8 +154,12 @@ Item types > icons
     background: url(../img/icons/wpam-search.svg) center center / 20px 20px no-repeat transparent;
 }
 
-#menu-to-edit .wpam-item__dynamic .item-title:before{
+#menu-to-edit .wpam-item__dynamic .item-title:before{    
     background: url(../img/icons/wpam-dynamic.svg) center center / 20px 20px no-repeat transparent;
+}
+
+#menu-to-edit .wpam-item__menu .item-title:before{
+    background: url(../img/icons/wpam-menu.svg) center center / 20px 20px no-repeat transparent;
 }
 
 

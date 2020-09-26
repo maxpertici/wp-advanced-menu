@@ -249,11 +249,14 @@ function wpam_item_type_custom_metabox(){
 				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-data]" value="<?php echo esc_url( $url )  ; ?>">
 				
 			</li>
-
 			<?php
+
+
+
+
 			/**
 			 * 
-			 * Shortcode item
+			 * Search item
 			 * 
 			 */
 			
@@ -279,10 +282,44 @@ function wpam_item_type_custom_metabox(){
 				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-data]" value="<?php echo esc_url( $url )  ; ?>">
 				
 			</li>
-
-
-
 			<?php
+
+
+
+
+			/**
+			 * 
+			 * Menu item
+			 * 
+			 */
+			
+
+			$wpam_custom_item_tag = '#wpam_menu' ;
+			$menu_item_data = array(
+				'menu-item-title'  => __( 'WP:AM', 'wp-advanced-menu' )
+				,'menu-item-url'    => $wpam_custom_item_tag
+				);
+
+			$url = $wpam_custom_item_tag . '_' . http_build_query($menu_item_data)  ;
+
+			?>
+			<li>
+				<label class="menu-item-title">
+					<input type="checkbox" class="menu-item-checkbox" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-label]" value="0"> <?php echo esc_html__( 'Menu', 'wp-advanced-menu' ) ; ?>
+				</label>
+
+				<input type="hidden" class="menu-item-type"   name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-type]" value="custom">
+				<input type="hidden" class="menu-item-object" name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-object]" value="custom">
+				<input type="hidden" class="menu-item-title"  name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-title]" value="<?php echo esc_attr__( 'Menu', 'wp-advanced-menu' ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-url]" value="<?php echo  esc_url( $url ) ; ?>">
+				<input type="hidden" class="menu-item-url"    name="menu-item[<?php echo esc_attr( $_nav_menu_placeholder ) ; ?>][menu-item-data]" value="<?php echo esc_url( $url )  ; ?>">
+				
+			</li>
+			<?php
+
+
+
+
 			/**
 			 * 
 			 * Dynamic item

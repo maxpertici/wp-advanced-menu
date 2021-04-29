@@ -48,16 +48,14 @@ if( function_exists('acf_add_local_field_group') ){
     function wpam_load_nav_menu_image_item_sizes( $field ) {
         
         $field['choices'] = array();
-        $acf_fields = array();
         $wpam_image_sizes = get_intermediate_image_sizes() ;
         
         foreach ( $wpam_image_sizes as $key => $size ) {
-            $acf_fields[ $key ] = $size ;
+            $field['choices'][ $size ] = $size;
         }
-
-        array_push( $acf_fields, "full" );
-        $field['choices'] = $acf_fields ;
-        sort($field['choices']);
+        
+        $field['choices'][ 'full' ] = 'full' ;
+        ksort ( $field['choices'] ) ;
 
         return $field;
     }

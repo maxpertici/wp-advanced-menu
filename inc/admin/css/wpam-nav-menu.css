@@ -123,8 +123,17 @@ Menu item > submenu options
     table-layout: fixed;
 }
 */
-.wpam-submenu-type-settings-field__type,
-.wpam-submenu-type-settings-field__colmuns-number {
-  display: inline-block;
-  width: 49%;
-  width: calc(50% - 3px); }
+
+
+.wpam-submenu-type-settings-field__type{
+  float: left;
+  width: 50%;
+}
+
+.wpam-submenu-type-settings-field__colmuns-number{
+  float: left;
+  clear: none !important;
+  width: 50%;
+}
+
+.wpam-image-settings-field__media .image-wrap{ max-width: 80px !important; }

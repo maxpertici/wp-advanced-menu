@@ -74,14 +74,10 @@ function wpam_load_acf_field(){
         // items
         include_once( WPAM_CORE_PATH . 'item-types.php' ) ;
 
-<<<<<<< HEAD
         // 70
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-nolink.php' );
 
-        // 80
-=======
         // 80 <- à vérif
->>>>>>> Mx
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-wpblock.php' );
 
         // 90 <- à vérif

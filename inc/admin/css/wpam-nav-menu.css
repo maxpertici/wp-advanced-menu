@@ -1,4 +1,10 @@
 /*
+Metabox
+*/
+#tabs-panel-wpam-item-type-custom-all {
+  max-height: 270px; }
+
+/*
 ACF
 */
 .acf-menu-settings .acf-fields .acf-range-wrap input[type="number"] {
@@ -75,10 +81,6 @@ Item types > icons
   /* background-color: #8a8a8a; */
   background: url(../img/icons/custom.svg) center center/20px 20px no-repeat transparent; }
 
-#menu-to-edit .wp-item-type__custom.wpam-item__menu .item-title:before {
-  /* background-color: #23282d; */
-  background: url(../img/icons/post_type_archive.svg) center center/20px 20px no-repeat transparent; }
-
 #menu-to-edit .wpam-item__image .item-title:before {
   /* background-color: #fdec00; */
   background: url(../img/icons/wpam-image.svg) center center/20px 20px no-repeat transparent; }
@@ -91,15 +93,31 @@ Item types > icons
   /* background-color: #fdec00; */
   background: url(../img/icons/wpam-paragraph.svg) center center/20px 20px no-repeat transparent; }
 
-#menu-to-edit .wpam-item__wpblock .item-title:before,
+#menu-to-edit .wpam-item__wpblock .item-title:before {
+  background: url(../img/icons/wpam-wpblock.svg) center center/20px 20px no-repeat transparent; }
+
 #menu-to-edit .wpam-item__content .item-title:before {
-  /* background-color: #fdec00; */
   background: url(../img/icons/wpam-content.svg) center center/20px 20px no-repeat transparent; }
 
+<<<<<<< HEAD
 #menu-to-edit .wpam-item__nolink .item-title:before {
   background: url(../img/icons/unlink.svg) center center/20px 20px no-repeat transparent; }
 
     
+=======
+#menu-to-edit .wpam-item__shortcode .item-title:before {
+  background: url(../img/icons/wpam-shortcode.svg) center center/20px 20px no-repeat transparent; }
+
+#menu-to-edit .wpam-item__search .item-title:before {
+  background: url(../img/icons/wpam-search.svg) center center/20px 20px no-repeat transparent; }
+
+#menu-to-edit .wpam-item__dynamic .item-title:before {
+  background: url(../img/icons/wpam-dynamic.svg) center center/20px 20px no-repeat transparent; }
+
+#menu-to-edit .wpam-item__menu .item-title:before {
+  background: url(../img/icons/wpam-menu.svg) center center/20px 20px no-repeat transparent; }
+
+>>>>>>> Mx
 /*
 Menu item > submenu options
 */
@@ -127,6 +145,7 @@ Menu item > submenu options
     table-layout: fixed;
 }
 */
+<<<<<<< HEAD
 
 
 .wpam-submenu-type-settings-field__type{
@@ -141,3 +160,18 @@ Menu item > submenu options
 }
 
 .wpam-image-settings-field__media .image-wrap{ max-width: 80px !important; }
+=======
+.wpam-submenu-type-settings-field__type,
+.wpam-submenu-type-settings-field__colmuns-number {
+  float: left;
+  width: 49%;
+  width: calc(50% - 3px);
+  margin-top: 16px !important;
+  margin-bottom: 16px !important; }
+
+.wpam-submenu-type-settings-field__type {
+  clear: left; }
+
+.wpam-submenu-type-settings-field__colmuns-number {
+  clear: none !important; }
+>>>>>>> Mx

@@ -395,6 +395,57 @@ $wpam_custom_menu_item_spec = array(
     ),
 
 
+    
+    /**
+     *  Shortcode
+     */
+    
+    'shortcode' => array(
+        'label'  => __( 'Shortcode' , 'wp-advanced-menu'),
+        'slug' => 'shortcode',
+
+        'prefix' => $wpam_prefix . 'shortcode',
+
+        'acf_group'  => '',
+        'acf_fields' => array(),
+
+    ),
+
+
+
+    /**
+     *  Search
+     */
+    
+    'search' => array(
+        'label'  => __( 'Search' , 'wp-advanced-menu'),
+        'slug' => 'search',
+
+        'prefix' => $wpam_prefix . 'search',
+
+        'acf_group'  => '',
+        'acf_fields' => array(),
+
+    ),
+
+
+
+    /**
+     *  Dynamic
+     */
+    
+    'dynamic' => array(
+        'label'  => __( 'Dynamic' , 'wp-advanced-menu'),
+        'slug' => 'dynamic',
+
+        'prefix' => $wpam_prefix . 'dynamic',
+
+        'acf_group'  => '',
+        'acf_fields' => array(),
+
+    ),
+
+    
 
     /**
      *  Generic item type (all item)

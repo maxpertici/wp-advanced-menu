@@ -346,6 +346,20 @@ $wpam_custom_menu_item_spec = array(
     ),
 
 
+    /**
+     *  No link
+     */
+    
+    'nolink' => array(
+        'label'  => __( 'No link' , 'wp-advanced-menu'),
+        'slug' => 'nolink',
+
+        'prefix' => $wpam_prefix . 'nolink',
+
+        'acf_group'  => '',
+        'acf_fields' => array(),
+
+    ),
 
     /**
      *  Post type archive

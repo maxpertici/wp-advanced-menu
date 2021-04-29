@@ -96,6 +96,10 @@ Item types > icons
   /* background-color: #fdec00; */
   background: url(../img/icons/wpam-content.svg) center center/20px 20px no-repeat transparent; }
 
+#menu-to-edit .wpam-item__nolink .item-title:before {
+  background: url(../img/icons/unlink.svg) center center/20px 20px no-repeat transparent; }
+
+    
 /*
 Menu item > submenu options
 */

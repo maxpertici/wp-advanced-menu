@@ -74,6 +74,9 @@ function wpam_load_acf_field(){
         // items
         include_once( WPAM_CORE_PATH . 'item-types.php' ) ;
 
+        // 70
+        include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-nolink.php' );
+
         // 80
         include_once( WPAM_CORE_PATH . 'acf-fields/acf-nav-menu-nav-item-wpblock.php' );
 

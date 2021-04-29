@@ -338,6 +338,7 @@ jQuery(document).ready(function($){
                 item_type === 'image'     ||
                 item_type === 'wpblock'   ||
                 item_type === 'menu'      ||
+                item_type === 'nolink'    ||
                 item_type === 'content'
 
                 ){
